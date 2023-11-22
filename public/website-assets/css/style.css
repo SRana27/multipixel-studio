@@ -1,5 +1,13 @@
 /*** Spinner Start ***/
-
+.bg-multipixel{
+    background: #82219da3;
+}
+.text-multipixel{
+color: #9205ba;
+}
+.text-multipixeldeep{
+   background: #17112e;
+}
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -12,6 +20,10 @@
      visibility: visible;
      opacity: 1;
  }
+ .header-text{
+ background-color: #080808 !important
+ }
+
 
 /*** Spinner End ***/
 
@@ -116,7 +128,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--bs-secondary) !important;
+    color: #ef58c2  !important;
 }
 
 .navbar .dropdown-toggle::after {
@@ -623,22 +635,22 @@
 .contact-detail::before {
     position: absolute;
     content: "";
-    height: 50%;
+    height:66%;
     width: 100%;
-    top: 0;
+    top:0;
     left: 0;
-    background: linear-gradient(rgb(210, 243, 235,1), rgba(230, 250, 245, .3)), url(../img/background.jpg) center center no-repeat;
+    background: linear-gradient(rgba(23,17,46, 0.97), rgba(66, 11, 147, 0.3)), url(../img/contactback.jpg) center center no-repeat;
     background-size: cover;
     border-radius: 10px;
     z-index: -1;
 }
 
 .contact-map {
-    background: #82219da3;
+    background: linear-gradient( rgba(130, 33, 157, 0) ,rgba(66, 11, 147, 0.3));
 }
 
 .contact-form {
-    background: #82219da3;
+    background: linear-gradient( rgba(130, 33, 157, 0) ,rgba(66, 11, 147, 0.3));
 }
 
 /*** Contact End ***/
