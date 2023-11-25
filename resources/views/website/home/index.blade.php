@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                    <h5 class="text-primary">About Us</h5>
+                    <h3 class="text-white">About Us</h3>
                     <h1 class="mb-4">About HighTech Agency And It's Innovative IT Solutions</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
                     <p class="mb-4">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
@@ -106,12 +106,11 @@
     </div>
     <!-- About End -->
 
-
     <!-- Services Start -->
     <div class="container-fluid services py-5 mb-5">
         <div class="container">
             <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h5 class="text-primary">Our Services</h5>
+                <h3 class="text-white">Our Services</h3>
                 <h1>Services Built Specifically For Your Business</h1>
             </div>
             <div class="row g-5 services-inner">
@@ -121,7 +120,7 @@
                             <div class="services-content-icon">
                                 <i class="fa fa-code fa-7x mb-4 text-primary"></i>
                                 <h4 class="mb-3">Web Design</h4>
-                                <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <p class="mb-4 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
@@ -133,7 +132,7 @@
                             <div class="services-content-icon">
                                 <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>
                                 <h4 class="mb-3">Web Development</h4>
-                                <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <p class="mb-4 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
@@ -145,7 +144,7 @@
                             <div class="services-content-icon">
                                 <i class="fa fa-external-link-alt fa-7x mb-4 text-primary"></i>
                                 <h4 class="mb-3">UI/UX Design</h4>
-                                <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <p class="mb-4 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
@@ -157,7 +156,7 @@
                             <div class="services-content-icon">
                                 <i class="fas fa-user-secret fa-7x mb-4 text-primary"></i>
                                 <h4 class="mb-3">Web Cecurity</h4>
-                                <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <p class="mb-4 text-multipixel ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
 
@@ -170,7 +169,7 @@
                             <div class="services-content-icon">
                                 <i class="fa fa-envelope-open fa-7x mb-4 text-primary"></i>
                                 <h4 class="mb-3">Digital Marketing</h4>
-                                <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <p class="mb-4 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
@@ -182,7 +181,7 @@
                             <div class="services-content-icon">
                                 <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>
                                 <h4 class="mb-3">Programming</h4>
-                                <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <p class="mb-4 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
@@ -194,11 +193,12 @@
     <!-- Services End -->
 
 
+
     <!-- Project Start -->
     <div class="container-fluid project py-5 mb-5">
         <div class="container">
             <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h5 class="text-primary">Our Project</h5>
+                <h3 class="text-white">Our Project</h3>
                 <h1>Our Recently Completed Projects</h1>
             </div>
             <div class="row g-5">
@@ -290,7 +290,7 @@
     <div class="container-fluid blog py-5 mb-5">
         <div class="container">
             <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h5 class="text-primary">Our Blog</h5>
+                <h3 class="text-white">Our Blog</h3>
                 <h1>Latest Blog & News</h1>
             </div>
             <div class="row g-5 justify-content-center">
@@ -397,7 +397,7 @@
     <div class="container-fluid py-5 mb-5 team">
         <div class="container">
             <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h5 class="text-primary">Our Team</h5>
+                <h3 class="text-white">Our Team</h3>
                 <h1>Meet our expert Team</h1>
             </div>
             <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
@@ -405,11 +405,11 @@
                     <div class="team-content">
                         <div class="team-img-icon">
                             <div class="team-img rounded-circle">
-                                <img src="{{asset('/')}}website-assets/img/team-1.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                <img src="{{asset('/')}}website-assets/img/team/boss.jpg" class="img-fluid w-100 rounded-circle" alt="">
                             </div>
                             <div class="team-name text-center py-3">
-                                <h4 class="">Full Name</h4>
-                                <p class="m-0">Designation</p>
+                                <h4 class="">Nabil  </h4>
+                                <p class="m-0">Head of department</p>
                             </div>
                             <div class="team-icon d-flex justify-content-center pb-4">
                                 <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -424,11 +424,11 @@
                     <div class="team-content">
                         <div class="team-img-icon">
                             <div class="team-img rounded-circle">
-                                <img src="{{asset('/')}}website-assets/img/team-2.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                <img src="{{asset('/')}}website-assets/img/team/maruf.jpg" class="img-fluid w-100 rounded-circle" alt="">
                             </div>
                             <div class="team-name text-center py-3">
-                                <h4 class="">Full Name</h4>
-                                <p class="m-0">Designation</p>
+                                <h4 class="">abdullah al maruf</h4>
+                                <p class="m-0">Video editor</p>
                             </div>
                             <div class="team-icon d-flex justify-content-center pb-4">
                                 <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -486,7 +486,7 @@
     <div class="container-fluid testimonial py-5 mb-5">
         <div class="container">
             <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h5 class="text-primary">Our Testimonial</h5>
+                <h3 class="text-white">Our Testimonial</h3>
                 <h1>Our Client Saying!</h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
@@ -585,9 +585,9 @@
     <div class="container-fluid py-5 mb-5">
         <div class="container">
             <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h5 class="text-primary">Get In Touch</h5>
+                <h3 class="text-white">Get In Touch</h3>
                 <h1 class="mb-3">Contact for any query</h1>
-                <p class="mb-2">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                <p class="mb-2">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done.</p>
             </div>
             <div class="contact-detail position-relative p-5">
                 <div class="row g-5 justify-content-center">

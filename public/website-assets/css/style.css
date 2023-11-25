@@ -121,7 +121,7 @@ color: #9205ba;
 .navbar .navbar-nav .nav-link {
     padding: 10px;
     color: var(--bs-white);
-    font-size: 20px;
+    font-size: 22px;
     outline: none;
 
 }
@@ -130,7 +130,14 @@ color: #9205ba;
 .navbar .navbar-nav .nav-link.active {
     color: #ef58c2  !important;
 }
-
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    position:sticky;
+}
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -192,34 +199,34 @@ color: #9205ba;
 }
 
 .carousel-control-prev {
-    width: 90px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     top: 50%;
     left: 0;
-    background: var(--bs-primary);
+    background: #17112e;
     border-radius: 0 50px 50px 0;
     opacity: 1;
 }
 
 .carousel-control-prev:hover {
-    background: var(--bs-secondary);
+    background:#82219da3;
     transition: .8s;
 }
 
 .carousel-control-next {
-    width: 90px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     top: 50%;
     right: 0;
-    background: var(--bs-primary);
+    background:  #17112e;
     border-radius: 50px 0 0 50px;
     opacity: 1;
 }
 
 .carousel-control-next:hover {
-    background: var(--bs-secondary);
+    background:#82219da3;
     transition: .8s;
 }
 
@@ -412,7 +419,7 @@ color: #9205ba;
     position: absolute;
     right: 0;
     bottom: 0;
-    background: var(--bs-primary);
+    background: #ffffff;
     border-radius: 10px;
     opacity: 1;
     z-index: -1;
@@ -434,7 +441,7 @@ color: #9205ba;
 .project-content a {
     display: inline-block;
     padding: 20px 25px;
-    background: var(--bs-primary);
+    background: #17112e;
     border-radius: 10px;
 }
 

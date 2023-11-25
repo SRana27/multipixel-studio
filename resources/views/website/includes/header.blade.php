@@ -18,7 +18,6 @@
                 <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-multipixel"></i></a>
                 <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-multipixel"></i></a>
                 <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-multipixel"></i></a>
-
             </div>
         </div>
     </div>
@@ -27,8 +26,8 @@
 
 <!-- Navbar Start -->
 <div class="container-fluid bg-multipixel">
-    <div class="container">
-        <nav class="navbar navbar-dark navbar-expand-lg py-0">
+    <div class="container ">
+        <nav class="navbar  navbar-expand-lg py-0 ">
             <a href="{{route('home')}}" class="navbar-brand">
                 <img src="{{asset('/')}}website-assets/img/logo.png" alt="logo" height="50px" width="150px">
             </a>
@@ -37,17 +36,16 @@
             </button>
             <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                 <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                    <a href="{{route('home')}}" class="nav-item nav-link active text-secondary">Home</a>
+                    <a href="{{route('home')}}" class="nav-item nav-link">Home</a>
                     <a href="{{route('about')}}" class="nav-item nav-link">About</a>
                     <a href="{{route('service')}}" class="nav-item nav-link">Services</a>
                     <a href="{{route('project')}}" class="nav-item nav-link">Projects</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu rounded">
-                            <a href="" class="dropdown-item">Our Blog</a>
-                            <a href="" class="dropdown-item">Our Team</a>
-                            <a href="" class="dropdown-item">Testimonial</a>
-                            <a href="" class="dropdown-item">404 Page</a>
+                            <a href="" class=" dropdown-item">Our Blog</a>
+                            <a href="" class=" dropdown-item">Our Team</a>
+                            <a href="" class=" dropdown-item">Testimonial</a>
                         </div>
                     </div>
                     <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
