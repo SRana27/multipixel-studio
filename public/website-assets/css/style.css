@@ -2,11 +2,14 @@
 .bg-multipixel{
     background: #82219da3;
 }
+.bg-multipixeldeep{
+    background: #6420a3;
+}
 .text-multipixel{
 color: #9205ba;
 }
 .text-multipixeldeep{
-   background: #17112e;
+   color: rgba(87, 28, 127, 0.89);
 }
 #spinner {
     opacity: 0;
@@ -30,7 +33,7 @@ color: #9205ba;
 
 /*** Button Start ***/
 .btn {
-    font-weight: 600;
+    font-weight: 400;
     transition: .5s;
 }
 
@@ -231,15 +234,15 @@ color: #9205ba;
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn1 {
-    background: var(--bs-secondary);
-    color: var(--bs-dark);
+    background:#6f42c1;
+    color: var(--bs-white);
     opacity: 1;
     border: 0;
     border-radius: 20px;
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn1:hover {
-    background: var(--bs-primary);
+    background: var(--bs-secondary);
     color: #ffffff;
     border: 0;
     opacity: 1;
@@ -248,7 +251,7 @@ color: #9205ba;
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn2 {
-    background: var(--bs-primary);
+    background:#6f42c1;
     color: var(--bs-white);
     opacity: 1;
     border: 0;
@@ -267,7 +270,7 @@ color: #9205ba;
 #carouselId .carousel-indicators li {
     width: 30px;
     height: 10px;
-    background: var(--bs-primary);
+    background:#82219da3;
     margin: 10px;
     border-radius: 30px;
     opacity: 1;
@@ -315,20 +318,23 @@ color: #9205ba;
         font-size: 14px !important;
     }
 }
+.rounded-circle-75{
+    border-radius: 40% !important
+}
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(../img/web.png) center center no-repeat;
+    background: linear-gradient(rgba(236, 221, 238, .7), rgba(100, 80, 113, 0.9)), url(../img/logo.png) center center no-repeat;
     background-size: cover;
 }
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
-    color: var(--bs-white);
+    color: #500d6d;
 }
 
 .page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
-    font-size: 18px;
-    color: var(--bs-white);
+    font-size: 20px;
+  color: #500d6d;
 }
 
 /*** Carousel End ***/
@@ -354,8 +360,9 @@ color: #9205ba;
     top: 0;
     left: 0;
     border-radius: 10px 10px 0 0;
-    background: rgba(3, 43, 243, 0.8);
-    transition: .5s;
+    background: rgba(44, 10, 71, 0.94);
+    transition: 2s;
+
 }
 
 .services-content::after {
@@ -367,7 +374,7 @@ color: #9205ba;
 .services-item:hover .services-content::after {
     height: 100%;
     opacity: 1;
-    transition: .5s;
+    transition: 1s;
 }
 
 .services-item:hover .services-content-icon {
@@ -388,6 +395,9 @@ color: #9205ba;
     color: var(--bs-white);
 }
 
+.services-item:hover .services-content-icon h4 {
+    color: var(--bs-white);
+}
 /*** Services End ***/
 
 
@@ -419,7 +429,7 @@ color: #9205ba;
     position: absolute;
     right: 0;
     bottom: 0;
-    background: #ffffff;
+    background: rgba(87, 28, 127, 0.89);
     border-radius: 10px;
     opacity: 1;
     z-index: -1;
@@ -499,7 +509,7 @@ color: #9205ba;
 /*** Team Start ***/
 
 .team-item {
-    border-top: 30px solid var(--bs-secondary) !important;
+    border-top: 30px solid #6420a3 !important;
     background: rgba(239, 239, 241, 0.8);
 }
 
@@ -509,7 +519,7 @@ color: #9205ba;
     content: "";
     position: relative;
     top: -101px;
-    background: var(--bs-secondary);
+    background: #6420a3;
     clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0% 50%);
     padding: 60px;
     opacity: 1;
@@ -527,7 +537,7 @@ color: #9205ba;
 }
 
 .team-img img {
-    border: 10px solid var(--bs-secondary);
+    border: 10px solid rgba(100, 32, 163, 0.76);
     transition: .5s;
 }
 
@@ -560,7 +570,7 @@ color: #9205ba;
     height: 56px;
     border-radius: 56px;
     margin-left: 15px;
-    background: var(--bs-secondary);
+    background:#6420a3 ;
     color: var(--bs-white);
     display: flex;
     align-items: center;
@@ -570,7 +580,7 @@ color: #9205ba;
 
 .team-carousel .owl-nav .owl-prev:hover,
 .team-carousel .owl-nav .owl-next:hover {
-    background: var(--bs-primary);
+    background: #ffc107;
     color: var(--bs-white);
 }
 

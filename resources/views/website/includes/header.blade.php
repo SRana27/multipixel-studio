@@ -9,8 +9,8 @@
     <div class="container">
         <div class="d-flex justify-content-between topbar">
             <div class="top-info">
-                <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-multipixel"></i></a>23 Ranking Street, New York</small>
-                <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-multipixel"></i></a>Email@Example.com</small>
+                <small class="me-3 text-white"><a href="#"><i class="fas fa-map-marker-alt me-2 text-multipixel"></i></a>23 Ranking Street, New York</small>
+                <small class="me-3 text-white"><a href="#"><i class="fas fa-envelope me-2 text-multipixel"></i></a>Email@Example.com</small>
             </div>
             <div id="note" class="text-white d-none d-xl-flex"><small>Note : We help you to Grow your Business</small></div>
             <div class="top-link">
@@ -31,8 +31,8 @@
             <a href="{{route('home')}}" class="navbar-brand">
                 <img src="{{asset('/')}}website-assets/img/logo.png" alt="logo" height="50px" width="150px">
             </a>
-            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+            <button type="button" class="navbar-toggler me-0 "  data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+               <span><i class="fa fa-bars text-white"  aria-hidden="true"></i></span>
             </button>
             <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                 <div class="navbar-nav ms-auto mx-xl-auto p-0">
@@ -42,10 +42,10 @@
                     <a href="{{route('project')}}" class="nav-item nav-link">Projects</a>
                     <div class="nav-item dropdown">
                         <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu rounded">
-                            <a href="" class=" dropdown-item">Our Blog</a>
-                            <a href="" class=" dropdown-item">Our Team</a>
-                            <a href="" class=" dropdown-item">Testimonial</a>
+                        <div class="dropdown-menu rounded ">
+                            <a href="{{route('blog')}}" class=" dropdown-item">Our Blog</a>
+                            <a href="{{route('team')}}" class=" dropdown-item">Our Team</a>
+                            <a href="{{route('comment')}}" class=" dropdown-item">Testimonial</a>
                         </div>
                     </div>
                     <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
@@ -61,7 +61,7 @@
                     </a>
                 </div>
                 <div class="d-flex flex-column pe-4 border-end">
-                    <span class="text-white-50">Have any questions?</span>
+                    <span class="text-white">Have any questions?</span>
                     <span class="text-white">Call: + 0123 456 7890</span>
                 </div>
                 <div class="d-flex align-items-center justify-content-center ms-4 ">

@@ -21,3 +21,6 @@ Route::get('/about',[WebsiteController::class,'about'])->name('about');
 Route::get('/service',[WebsiteController::class,'service'])->name('service');
 Route::get('/project',[WebsiteController::class,'project'])->name('project');
 Route::get('/contact',[WebsiteController::class,'contact'])->name('contact');
+Route::get('/blog',[WebsiteController::class,'blog'])->name('blog');
+Route::get('/team',[WebsiteController::class,'team'])->name('team');
+Route::get('/client-comment',[WebsiteController::class,'comment'])->name('comment');

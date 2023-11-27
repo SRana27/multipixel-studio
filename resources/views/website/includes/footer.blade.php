@@ -2,7 +2,7 @@
 <div class="container-fluid footer text-multipixeldeep wow fadeIn" data-wow-delay=".3s">
     <div class="container pt-5 pb-4">
         <div class="row g-5">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <a href="{{route('home')}}">
                     <h1 class="text-white fw-bold d-block">Multipixel<span class="text-multipixel">Studio</span> </h1>
                 </a>
@@ -46,10 +46,10 @@
         <hr class="text-light mt-5 mb-4">
         <div class="row">
             <div class="col-md-6 text-center text-md-start">
-                <span class="text-light"><a href="#" class="text-multipixel"><i class="fas fa-copyright text-multipixel me-2"></i>multipixelstudio</a>, All right reserved.</span>
+                <span class="text-light"><a href="#" class="text-multipixel"><i class="fas fa-copyright text-multipixel me-2"></i>multipixelstudio</a> , All right reserved 2023.</span>
             </div>
             <div class="col-md-6 text-center text-md-end">
-                <span class="text-light">Designed By :<a href="" class="text-secondary"> VerseTech</a> Distributed By <a href="">Golden Creative Ltd</a></span>
+                <span class="text-light">Designed By :<a href="" class="text-multipixel"> VerseTech</a> Distributed By <a href="">Golden Creative Ltd</a></span>
             </div>
         </div>
     </div>

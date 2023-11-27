@@ -29,4 +29,17 @@ public function index()
     {
         return view('website.contact.index');
     }
+    public function blog()
+    {
+        return view('website.blog.index');
+    }
+
+  public function comment()
+   {
+    return view('website.client-comment.index');
+  }
+    public function team()
+    {
+        return view('website.team.index');
+    }
 }
