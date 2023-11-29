@@ -31,25 +31,25 @@
                 <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="blog-item position-relative bg-light rounded">
                         <img src="{{asset('/')}}website-assets/img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="" height="100%">
-                        <span class="position-absolute px-4 py-3 bg-multipixeldeep text-white rounded" style="top: -28px; right: 20px;">Metting</span>
+                        <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">Metting</span>
                         <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
-                            <div class="blog-icon btn bg-multipixeldeep px-3 rounded-pill my-auto">
-                                <a href="" class="btn text-white">Read More</a>
+                            <div class="blog-icon btn bg-multipixeldeep px-2 rounded-pill py-1">
+                                <a href="" class="btn text-white ">Read More</a>
                             </div>
-                            <div class="blog-btn-icon btn bg-multipixeldeep px-4 py-3 rounded-pill ">
+                            <div class="blog-btn-icon btn bg-multipixeldeep px-3 py-3 ms-2 rounded-pill ">
                                 <div class="blog-icon-1">
-                                    <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    <p class="btn text-white px-2">Share<i class="fa fa-arrow-right ms-2"></i></p>
                                 </div>
-                                <div class="blog-icon-2">
-                                    <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                <div class="blog-icon-2 px-2">
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-facebook-f text-white"></i></a>
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-twitter text-white"></i></a>
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-instagram text-white"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                        <div class="blog-content text-center  px-3" style="margin-top: -25px;">
                             <img src="{{asset('/')}}website-assets/img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
-                            <h5 class="text-dark">By Daniel Martin</h5>
+                            <h5 class="text-dark ">By Daniel Martin</h5>
                             <span class="text-multipixel">24 March 2023</span>
                             <p class="py-2 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
                         </div>
@@ -62,19 +62,19 @@
                 <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
                     <div class="blog-item position-relative bg-light rounded">
                         <img src="{{asset('/')}}website-assets/img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <span class="position-absolute px-4 py-3 bg-multipixeldeep text-white rounded" style="top: -28px; right: 20px;">Development</span>
+                        <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">Development</span>
                         <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
-                            <div class="blog-icon btn bg-multipixeldeep px-3 rounded-pill my-auto">
+                            <div class="blog-icon btn bg-multipixeldeep px-2 rounded-pill py-1">
                                 <a href="" class="btn text-white ">Read More</a>
                             </div>
-                            <div class="blog-btn-icon btn bg-multipixeldeep px-4 py-3 rounded-pill ">
+                            <div class="blog-btn-icon btn bg-multipixeldeep px-3 py-3 ms-2 rounded-pill ">
                                 <div class="blog-icon-1">
-                                    <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    <p class="btn text-white px-2">Share<i class="fa fa-arrow-right ms-2"></i></p>
                                 </div>
-                                <div class="blog-icon-2">
-                                    <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                <div class="blog-icon-2 px-2">
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-facebook-f text-white"></i></a>
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-twitter text-white"></i></a>
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-instagram text-white"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -93,19 +93,19 @@
                 <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
                     <div class="blog-item position-relative bg-light rounded">
                         <img src="{{asset('/')}}website-assets/img/blog-3.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <span class="position-absolute px-4 py-3 bg-multipixeldeep text-white rounded" style="top: -28px; right: 20px;">Mobile App</span>
+                        <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">Mobile App</span>
                         <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
-                            <div class="blog-icon btn bg-multipixeldeep px-3 rounded-pill my-auto">
+                            <div class="blog-icon btn bg-multipixeldeep px-2 rounded-pill py-1">
                                 <a href="" class="btn text-white ">Read More</a>
                             </div>
-                            <div class="blog-btn-icon btn bg-multipixeldeep px-4 py-3 rounded-pill ">
+                            <div class="blog-btn-icon btn bg-multipixeldeep px-3 py-3 ms-2 rounded-pill ">
                                 <div class="blog-icon-1">
-                                    <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    <p class="btn text-white px-2">Share<i class="fa fa-arrow-right ms-2"></i></p>
                                 </div>
-                                <div class="blog-icon-2">
-                                    <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                <div class="blog-icon-2 px-2">
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-facebook-f text-white"></i></a>
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-twitter text-white"></i></a>
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-instagram text-white"></i></a>
                                 </div>
                             </div>
                         </div>

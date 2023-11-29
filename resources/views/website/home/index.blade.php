@@ -1,6 +1,6 @@
 @extends('website.master')
 @section('title')
-   Multipixelstudio
+  Welcome Multipixelstudio
 
 @endsection
 
@@ -26,7 +26,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item ">
                     <img src="{{asset('/')}}website-assets/img/carousel-1.jpg" class="img-fluid" alt="Second slide">
                     <div class="carousel-caption">
                         <div class="container carousel-content">
@@ -115,45 +115,45 @@
             </div>
             <div class="row g-5 services-inner">
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="services-item bg-light">
+                    <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
-                                <div class="">
+                                <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/videoedt.jpg" height="200px" width="100%" class="rounded">
                                 </div>
 {{--                                <i class="fa fa-code fa-7x mb-4 text-primary"></i>--}}
-                                <h4 class="mb-3 pt-2">Video Editing</h4>
-                                <p class="mb-4 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <h3 class="mb-3 text-white ">Video Editing</h3>
+                                <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                    <div class="services-item bg-light">
+                    <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
                                 {{--                                <i class="fa fa-external-link-alt fa-7x mb-4 text-primary"></i>--}}
-                                <div class="">
+                                <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/graphic.jpg" height="200px" width="100%" class="rounded">
                                 </div>
-                                <h4 class="mb-3 pt-2">Graphic Design</h4>
-                                <p class="mb-4 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <h3 class="mb-3  text-white">Graphic Design</h3>
+                                <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="services-item bg-light">
+                    <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
                                 {{--                                <i class="fas fa-user-secret fa-7x mb-4 text-primary"></i>--}}
                                 <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/animation.jpg" height="200px" width="100%" class="rounded">
                                 </div>
-                                <h4 class="mb-3">Animation</h4>
-                                <p class="mb-4 text-multipixel ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <h4 class="mb-3 text-white">Animation</h4>
+                                <p class="mb-4 text-white ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
 
@@ -161,43 +161,46 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                    <div class="services-item bg-light">
+                    <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
                                 {{--                                <i class="fa fa-envelope-open fa-7x mb-4 text-primary"></i>--}}
                                 <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/digital.jpg" height="200px" width="100%" class="rounded">
                                 </div>
-                                <h4 class="mb-3">Digital Marketing</h4>
-                                <p class="mb-4 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <h3 class="mb-3 text-white">Digital Marketing</h3>
+                                <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                    <div class="services-item bg-light">
+                    <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
                                 {{--                                <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>--}}
                                 <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/logo-design-1.jpg" height="200px" width="100%" class="rounded">
                                 </div>
-                                <h4 class="mb-3">Logo Design</h4>
-                                <p class="mb-4 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <h3 class="mb-3 text-white">Logo Design</h3>
+                                <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                    <div class="services-item bg-light">
+                    <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
-                                <img src="{{asset('/')}}website-assets/img/webdevelopment.jpg" height="200px" width="100%" class="rounded">
-{{--                                <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>--}}
-                                <h4 class="mb-3 pt-2">Web Development</h4>
-                                <p class="mb-4 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <div class="mb-2">
+                                    <img src="{{asset('/')}}website-assets/img/webdevelopment.jpg" height="200px" width="100%" class="rounded">
+                                </div>
+
+        {{--                                <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>--}}
+                                <h4 class="mb-3 text-white">Web Development</h4>
+                                <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
@@ -316,9 +319,9 @@
                             <img src="{{asset('/')}}website-assets/img/testimonial-1.jpg" alt="">
                         </div>
                         <div class="ms-4">
-                            <h4 class="text-dark">Client Name</h4>
-                            <p class="m-0 pb-3 text-multipixel">Profession</p>
-                            <div class="d-flex pe-5 text-multipixel">
+                            <h4 class="">Ms.jackling </h4>
+                            <p class="m-0 pb-3 ">Profession</p>
+                            <div class="d-flex pe-5 ">
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
@@ -328,7 +331,7 @@
                         </div>
                     </div>
                     <div class="border-top mt-4 pt-3">
-                        <p class="mb-0 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                        <p class="mb-0  ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
                     </div>
                 </div>
                 <div class="testimonial-item border p-4">
@@ -337,9 +340,9 @@
                             <img src="{{asset('/')}}website-assets/img/testimonial-2.jpg" alt="">
                         </div>
                         <div class="ms-4">
-                            <h4 class="text-dark">Client Name</h4>
-                            <p class="m-0 pb-3 text-multipixel">Profession</p>
-                            <div class="d-flex pe-5 text-multipixel">
+                            <h4 class="">Andertion</h4>
+                            <p class="m-0 pb-3">Profession</p>
+                            <div class="d-flex pe-5 ">
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
@@ -349,7 +352,7 @@
                         </div>
                     </div>
                     <div class="border-top mt-4 pt-3">
-                        <p class="mb-0 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                        <p class="mb-0 ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
                     </div>
                 </div>
                 <div class="testimonial-item border p-4">
@@ -358,9 +361,9 @@
                             <img src="{{asset('/')}}website-assets/img/testimonial-3.jpg" alt="">
                         </div>
                         <div class="ms-4">
-                            <h4 class="text-dark">Client Name</h4>
-                            <p class="m-0 pb-3 text-multipixel">Profession</p>
-                            <div class="d-flex pe-5 text-multipixel">
+                            <h4 class="">Mrs. Sendy </h4>
+                            <p class="m-0 pb-3 ">Profession</p>
+                            <div class="d-flex pe-5 ">
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
@@ -370,7 +373,7 @@
                         </div>
                     </div>
                     <div class="border-top mt-4 pt-3">
-                        <p class="mb-0 text-multipixel" >Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                        <p class="mb-0 " >Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
                     </div>
                 </div>
                 <div class="testimonial-item border p-4">
@@ -379,9 +382,9 @@
                             <img src="{{asset('/')}}website-assets/img/testimonial-4.jpg" alt="">
                         </div>
                         <div class="ms-4">
-                            <h4 class="text-dark">Client Name</h4>
-                            <p class="m-0 pb-3 text-multipixel">Profession</p>
-                            <div class="d-flex pe-5 text-multipixel">
+                            <h4 class="">Jons sina</h4>
+                            <p class="m-0 pb-3 ">Profession</p>
+                            <div class="d-flex pe-5 ">
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
@@ -391,7 +394,7 @@
                         </div>
                     </div>
                     <div class="border-top mt-4 pt-3">
-                        <p class="mb-0 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                        <p class="mb-0 ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
                     </div>
                 </div>
             </div>
@@ -399,7 +402,6 @@
     </div>
 
     <!-- Testimonial End -->
-
 
     <!-- Blog Start -->
     <div class="container-fluid blog py-5 mb-5">
@@ -412,25 +414,25 @@
                 <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="blog-item position-relative bg-light rounded">
                         <img src="{{asset('/')}}website-assets/img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="" height="100%">
-                        <span class="position-absolute px-4 py-3 bg-multipixeldeep text-white rounded" style="top: -28px; right: 20px;">Metting</span>
+                        <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">Metting</span>
                         <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
-                            <div class="blog-icon btn bg-multipixeldeep px-3 rounded-pill my-auto">
-                                <a href="" class="btn text-white">Read More</a>
+                            <div class="blog-icon btn bg-multipixeldeep px-2 rounded-pill py-1">
+                                <a href="" class="btn text-white ">Read More</a>
                             </div>
-                            <div class="blog-btn-icon btn bg-multipixeldeep px-4 py-3 rounded-pill ">
+                            <div class="blog-btn-icon btn bg-multipixeldeep px-3 py-3 ms-2 rounded-pill ">
                                 <div class="blog-icon-1">
-                                    <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    <p class="btn text-white px-2">Share<i class="fa fa-arrow-right ms-2"></i></p>
                                 </div>
-                                <div class="blog-icon-2">
-                                    <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                <div class="blog-icon-2 px-2">
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-facebook-f text-white"></i></a>
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-twitter text-white"></i></a>
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-instagram text-white"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                        <div class="blog-content text-center  px-3" style="margin-top: -25px;">
                             <img src="{{asset('/')}}website-assets/img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
-                            <h5 class="text-dark">By Daniel Martin</h5>
+                            <h5 class="text-dark ">By Daniel Martin</h5>
                             <span class="text-multipixel">24 March 2023</span>
                             <p class="py-2 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
                         </div>
@@ -443,19 +445,19 @@
                 <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
                     <div class="blog-item position-relative bg-light rounded">
                         <img src="{{asset('/')}}website-assets/img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <span class="position-absolute px-4 py-3 bg-multipixeldeep text-white rounded" style="top: -28px; right: 20px;">Development</span>
+                        <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">Development</span>
                         <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
-                            <div class="blog-icon btn bg-multipixeldeep px-3 rounded-pill my-auto">
+                            <div class="blog-icon btn bg-multipixeldeep px-2 rounded-pill py-1">
                                 <a href="" class="btn text-white ">Read More</a>
                             </div>
-                            <div class="blog-btn-icon btn bg-multipixeldeep px-4 py-3 rounded-pill ">
+                            <div class="blog-btn-icon btn bg-multipixeldeep px-3 py-3 ms-2 rounded-pill ">
                                 <div class="blog-icon-1">
-                                    <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    <p class="btn text-white px-2">Share<i class="fa fa-arrow-right ms-2"></i></p>
                                 </div>
-                                <div class="blog-icon-2">
-                                    <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                <div class="blog-icon-2 px-2">
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-facebook-f text-white"></i></a>
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-twitter text-white"></i></a>
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-instagram text-white"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -474,19 +476,19 @@
                 <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
                     <div class="blog-item position-relative bg-light rounded">
                         <img src="{{asset('/')}}website-assets/img/blog-3.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <span class="position-absolute px-4 py-3 bg-multipixeldeep text-white rounded" style="top: -28px; right: 20px;">Mobile App</span>
+                        <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">Mobile App</span>
                         <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
-                            <div class="blog-icon btn bg-multipixeldeep px-3 rounded-pill my-auto">
+                            <div class="blog-icon btn bg-multipixeldeep px-2 rounded-pill py-1">
                                 <a href="" class="btn text-white ">Read More</a>
                             </div>
-                            <div class="blog-btn-icon btn bg-multipixeldeep px-4 py-3 rounded-pill ">
+                            <div class="blog-btn-icon btn bg-multipixeldeep px-3 py-3 ms-2 rounded-pill ">
                                 <div class="blog-icon-1">
-                                    <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    <p class="btn text-white px-2">Share<i class="fa fa-arrow-right ms-2"></i></p>
                                 </div>
-                                <div class="blog-icon-2">
-                                    <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                <div class="blog-icon-2 px-2">
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-facebook-f text-white"></i></a>
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-twitter text-white"></i></a>
+                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-instagram text-white"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -560,8 +562,8 @@
                             <div class="team-img rounded-circle">
                                 <img src="{{asset('/')}}website-assets/img/team-3.jpg" class="img-fluid w-100 rounded-circle" alt="">
                             </div>
-                            <div class="team-name text-center py-3">
-                                <h4 class="">TBA</h4>
+                            <div class="text-center py-3">
+                                <h4 >TBA</h4>
                                 <p class="m-0 text-multipixeldeep">Designation</p>
                             </div>
                             <div class="team-icon d-flex justify-content-center pb-4">
@@ -605,7 +607,7 @@
                 <h1 class="mb-3">Contact for any query</h1>
                 <p class="mb-2">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done.</p>
             </div>
-            <div class="contact-detail position-relative p-5">
+            <div class="contact-detail position-relative p-3">
                 <div class="row g-5 justify-content-center">
                     <div class="col-xl-4 col-lg-6 wow fadeIn " data-wow-delay=".3s">
                         <div class="d-flex  p-2 rounded">
@@ -645,13 +647,13 @@
                 </div>
                 <div class="row g-5 mt-5">
                     <div class="col-lg-6  wow fadeIn" data-wow-delay=".3s">
-                        <div class="p-5 h-100 rounded contact-map">
+                        <div class="h-100 rounded contact-map">
                             <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4710403339755!2d-73.82241512404069!3d40.685622471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1686493221834!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12  wow fadeIn" data-wow-delay=".5s">
-                        <div class="p-5 rounded contact-form">
-                            <div class="mb-4">
+                    <div class="col-lg-6 col-sm-12  wow fadeIn" data-wow-delay=".5s">
+                        <div class=" rounded contact-form">
+                            <div class="mb-4 ">
                                 <input type="text" class="form-control border-0 py-3" placeholder="Your Name">
                             </div>
                             <div class="mb-4">
