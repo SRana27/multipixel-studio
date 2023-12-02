@@ -65,7 +65,6 @@
                     <span class="text-white">Call: + 0123 456 7890</span>
                 </div>
                 <div class="d-flex align-items-center justify-content-center ms-4 ">
-{{--                    <input class="form-control mx-1" type="text">--}}
                     <a href=""><i class="bi bi-search text-white fa-1x"></i> </a>
                 </div>
 

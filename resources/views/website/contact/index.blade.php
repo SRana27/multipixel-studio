@@ -86,7 +86,7 @@
                                 <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Message"></textarea>
                             </div>
                             <div class="text-start">
-                                <button  class="btn bg-white py-2 text-multipixel px-4" type="button">Send Message</button>
+                                <button  class="btn bg-multipixeldeep py-2 text-white px-4" type="button">Send Message</button>
                             </div>
                         </div>
                     </div>
