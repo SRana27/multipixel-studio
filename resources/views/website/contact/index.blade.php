@@ -1,6 +1,6 @@
 @extends('website.master')
 @section('title')
-    about
+    Contact us
 @endsection
 
 @section('body')

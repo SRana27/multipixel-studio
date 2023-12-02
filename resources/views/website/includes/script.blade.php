@@ -12,11 +12,22 @@
 
 <script>
     const activePage=window.location.href;
-     // console.log(`${activePage}`);
+     console.log(`${activePage}`);
     const navLinks =document.querySelectorAll('.nav-link').
     forEach(link => {
         if(link.href.includes(`${activePage}`)){
             link.classList.add('active').siblings().removeClass('active');
         }
     })
+
 </script>
+<script>
+    const activePage=window.location.href;
+    console.log(`${activePage}`);
+    const dropdown =document.querySelectorAll('.dropdown-item').
+    forEach(link => {
+        if(link.href.includes(`${activePage}`)){
+            link.classList.add('active').siblings().removeClass('active');
+        }
+    })
+    </script>

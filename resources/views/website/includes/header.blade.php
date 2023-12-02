@@ -40,15 +40,15 @@
                     <a href="{{route('about')}}" class="nav-item nav-link">About</a>
                     <a href="{{route('service')}}" class="nav-item nav-link">Services</a>
                     <a href="{{route('project')}}" class="nav-item nav-link">Projects</a>
+                    <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
                     <div class="nav-item dropdown">
                         <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu rounded ">
+                        <div class="dropdown-menu  rounded ">
                             <a href="{{route('blog')}}" class=" dropdown-item">Our Blog</a>
                             <a href="{{route('team')}}" class=" dropdown-item">Our Team</a>
-                            <a href="{{route('comment')}}" class=" dropdown-item">Testimonial</a>
+                            <a href="{{route('comment')}}" class="dropdown-item">Testimonial</a>
                         </div>
                     </div>
-                    <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
                 </div>
             </div>
             <div class="d-none d-xl-flex flex-shirink-0">

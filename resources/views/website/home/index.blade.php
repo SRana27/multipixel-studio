@@ -334,7 +334,7 @@
                         <p class="mb-0  ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
                     </div>
                 </div>
-                <div class="testimonial-item border p-4">
+                <div class=" testimonial-item border p-4">
                     <div class=" d-flex align-items-center">
                         <div class="">
                             <img src="{{asset('/')}}website-assets/img/testimonial-2.jpg" alt="">
@@ -355,7 +355,7 @@
                         <p class="mb-0 ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
                     </div>
                 </div>
-                <div class="testimonial-item border p-4">
+                <div class=" testimonial-item border p-4">
                     <div class=" d-flex align-items-center">
                         <div class="">
                             <img src="{{asset('/')}}website-assets/img/testimonial-3.jpg" alt="">
@@ -376,7 +376,7 @@
                         <p class="mb-0 " >Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
                     </div>
                 </div>
-                <div class="testimonial-item border p-4">
+                <div class=" testimonial-item border p-4">
                     <div class=" d-flex align-items-center">
                         <div class="">
                             <img src="{{asset('/')}}website-assets/img/testimonial-4.jpg" alt="">
@@ -411,7 +411,7 @@
                 <h1>Latest Blog & News</h1>
             </div>
             <div class="row g-5 justify-content-center">
-                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="blog-item position-relative bg-light rounded">
                         <img src="{{asset('/')}}website-assets/img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="" height="100%">
                         <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">Metting</span>
@@ -442,7 +442,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
+                <div class=" col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
                     <div class="blog-item position-relative bg-light rounded">
                         <img src="{{asset('/')}}website-assets/img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
                         <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">Development</span>
@@ -473,7 +473,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
+                <div class=" col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
                     <div class="blog-item position-relative bg-light rounded">
                         <img src="{{asset('/')}}website-assets/img/blog-3.jpg" class="img-fluid w-100 rounded-top" alt="">
                         <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">Mobile App</span>

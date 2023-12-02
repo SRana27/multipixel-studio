@@ -31,45 +31,45 @@
             </div>
             <div class="row g-5 services-inner">
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="services-item bg-light">
+                    <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
-                                <div class="">
+                                <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/videoedt.jpg" height="200px" width="100%" class="rounded">
                                 </div>
                                 {{--                                <i class="fa fa-code fa-7x mb-4 text-primary"></i>--}}
-                                <h4 class="mb-3 pt-2">Video Editing</h4>
-                                <p class="mb-4 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <h3 class="mb-3 text-white ">Video Editing</h3>
+                                <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                    <div class="services-item bg-light">
+                    <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
                                 {{--                                <i class="fa fa-external-link-alt fa-7x mb-4 text-primary"></i>--}}
-                                <div class="">
+                                <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/graphic.jpg" height="200px" width="100%" class="rounded">
                                 </div>
-                                <h4 class="mb-3 pt-2">Graphic Design</h4>
-                                <p class="mb-4 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <h3 class="mb-3  text-white">Graphic Design</h3>
+                                <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="services-item bg-light">
+                    <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
                                 {{--                                <i class="fas fa-user-secret fa-7x mb-4 text-primary"></i>--}}
                                 <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/animation.jpg" height="200px" width="100%" class="rounded">
                                 </div>
-                                <h4 class="mb-3">Animation</h4>
-                                <p class="mb-4 text-multipixel ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <h4 class="mb-3 text-white">Animation</h4>
+                                <p class="mb-4 text-white ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
 
@@ -77,43 +77,46 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                    <div class="services-item bg-light">
+                    <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
                                 {{--                                <i class="fa fa-envelope-open fa-7x mb-4 text-primary"></i>--}}
                                 <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/digital.jpg" height="200px" width="100%" class="rounded">
                                 </div>
-                                <h4 class="mb-3">Digital Marketing</h4>
-                                <p class="mb-4 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <h3 class="mb-3 text-white">Digital Marketing</h3>
+                                <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                    <div class="services-item bg-light">
+                    <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
                                 {{--                                <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>--}}
                                 <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/logo-design-1.jpg" height="200px" width="100%" class="rounded">
                                 </div>
-                                <h4 class="mb-3">Logo Design</h4>
-                                <p class="mb-4 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <h3 class="mb-3 text-white">Logo Design</h3>
+                                <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                    <div class="services-item bg-light">
+                    <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
-                                <img src="{{asset('/')}}website-assets/img/webdevelopment.jpg" height="200px" width="100%" class="rounded">
+                                <div class="mb-2">
+                                    <img src="{{asset('/')}}website-assets/img/webdevelopment.jpg" height="200px" width="100%" class="rounded">
+                                </div>
+
                                 {{--                                <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>--}}
-                                <h4 class="mb-3 pt-2">Web Development</h4>
-                                <p class="mb-4 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <h4 class="mb-3 text-white">Web Development</h4>
+                                <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>

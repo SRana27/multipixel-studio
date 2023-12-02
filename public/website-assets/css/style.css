@@ -2,6 +2,7 @@
 .bg-multipixel{
     background: #82219da3;
 }
+
 .bg-multipixeldeep{
     background: #6420a3;
 }
@@ -260,7 +261,7 @@ color: #9205ba;
 
 .carousel-caption .carousel-content a button.carousel-content-btn2:hover {
     background: var(--bs-secondary);
-    color: var(--bs-dark);
+    color: var(--bs-white);
     border: 0;
     opacity: 1;
     transition: 1s;
@@ -270,14 +271,19 @@ color: #9205ba;
 #carouselId .carousel-indicators li {
     width: 30px;
     height: 10px;
-    background:#82219da3;
+    background: var(--bs-secondary);
     margin: 10px;
     border-radius: 30px;
     opacity: 1;
 }
 
+#carouselId .carousel-indicators li.active{
+
+    background:#82219da3;
+}
+
 #carouselId .carousel-indicators li:hover {
-    background: var(--bs-secondary);
+    background:white;
     opacity: 1;
 }
 
@@ -693,14 +699,14 @@ color: #9205ba;
     margin: 0 5px;
     width: 15px;
     height: 15px;
-    background: #ffffff;
+    background:#82219da3 ;
     border-radius: 15px;
     transition: .5s;
 }
 
 .testimonial-carousel .owl-dot.active {
-    width: 30px;
-    background:#82219da3 ;
+    width: 15px;
+    background: #ffffff;
 }
 
 .testimonial-carousel .owl-item.center {

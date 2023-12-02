@@ -1,6 +1,6 @@
 @extends('website.master')
 @section('title')
-    about
+    Team Member
 @endsection
 
 @section('body')

@@ -1,6 +1,6 @@
 @extends('website.master')
 @section('title')
-    about
+   Testimonial
 @endsection
 
 @section('body')
@@ -18,6 +18,7 @@
         </div>
     </div>
     <!-- Page Header End -->
+
     <!-- Testimonial Start -->
     <div class="container-fluid testimonial py-5 mb-5">
         <div class="container">
@@ -32,19 +33,19 @@
                             <img src="{{asset('/')}}website-assets/img/testimonial-1.jpg" alt="">
                         </div>
                         <div class="ms-4">
-                            <h4 class="text-dark">Client Name</h4>
-                            <p class="m-0 pb-3 text-multipixel">Profession</p>
-                            <div class="d-flex pe-5 text-multipixel">
+                            <h4 class="">Ms.jackling </h4>
+                            <p class="m-0 pb-3 ">Profession</p>
+                            <div class="d-flex pe-5 ">
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
+                               <i class="fas fa-star-half-alt me-1"></i>
                             </div>
                         </div>
                     </div>
                     <div class="border-top mt-4 pt-3">
-                        <p class="mb-0 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                        <p class="mb-0  ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
                     </div>
                 </div>
                 <div class="testimonial-item border p-4">
@@ -53,9 +54,9 @@
                             <img src="{{asset('/')}}website-assets/img/testimonial-2.jpg" alt="">
                         </div>
                         <div class="ms-4">
-                            <h4 class="text-dark">Client Name</h4>
-                            <p class="m-0 pb-3 text-multipixel">Profession</p>
-                            <div class="d-flex pe-5 text-multipixel">
+                            <h4 class="">Andertion</h4>
+                            <p class="m-0 pb-3">Profession</p>
+                            <div class="d-flex pe-5 ">
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
@@ -65,7 +66,7 @@
                         </div>
                     </div>
                     <div class="border-top mt-4 pt-3">
-                        <p class="mb-0 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                        <p class="mb-0 ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
                     </div>
                 </div>
                 <div class="testimonial-item border p-4">
@@ -74,19 +75,19 @@
                             <img src="{{asset('/')}}website-assets/img/testimonial-3.jpg" alt="">
                         </div>
                         <div class="ms-4">
-                            <h4 class="text-dark">Client Name</h4>
-                            <p class="m-0 pb-3 text-multipixel">Profession</p>
-                            <div class="d-flex pe-5 text-multipixel">
+                            <h4 class="">Mrs. Sendy </h4>
+                            <p class="m-0 pb-3 ">Profession</p>
+                            <div class="d-flex pe-5 ">
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
+                                <i class="fa fa-star-o me-1" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
                     <div class="border-top mt-4 pt-3">
-                        <p class="mb-0 text-multipixel" >Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                        <p class="mb-0 " >Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
                     </div>
                 </div>
                 <div class="testimonial-item border p-4">
@@ -95,9 +96,9 @@
                             <img src="{{asset('/')}}website-assets/img/testimonial-4.jpg" alt="">
                         </div>
                         <div class="ms-4">
-                            <h4 class="text-dark">Client Name</h4>
-                            <p class="m-0 pb-3 text-multipixel">Profession</p>
-                            <div class="d-flex pe-5 text-multipixel">
+                            <h4 class="">Jons sina</h4>
+                            <p class="m-0 pb-3 ">Profession</p>
+                            <div class="d-flex pe-5 ">
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
@@ -107,7 +108,7 @@
                         </div>
                     </div>
                     <div class="border-top mt-4 pt-3">
-                        <p class="mb-0 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                        <p class="mb-0 ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
                     </div>
                 </div>
             </div>

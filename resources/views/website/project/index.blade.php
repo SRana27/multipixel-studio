@@ -1,6 +1,6 @@
 @extends('website.master')
 @section('title')
-    about
+Completed Project
 @endsection
 
 @section('body')
