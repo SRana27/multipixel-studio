@@ -96,9 +96,9 @@
                 </div>
                 <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
                     <h3 class="text-white">About Us</h3>
-                    <h1 class="mb-4">About HighTech Agency And It's Innovative IT Solutions</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
-                    <p class="mb-4">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
+                    <h1 class="mb-4 ">About HighTech Agency And It's Innovative IT Solutions</h1>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
+                    <p class="mb-4 text-justify">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
                     <a href="" class="btn bg-multipixeldeep rounded-pill px-5 py-3 text-white">More Details</a>
                 </div>
             </div>
@@ -660,7 +660,7 @@
                                 <input type="email" class="form-control border-0 py-3" placeholder="Your Email">
                             </div>
                             <div class="mb-4">
-                                <input type="text" class="form-control border-0 py-3" placeholder="Project">
+                                <input type="text" class="form-control border-0 py-3" placeholder="subject">
                             </div>
                             <div class="mb-4">
                                 <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Message"></textarea>

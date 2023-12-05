@@ -95,8 +95,13 @@ color: #9205ba;
 
 .topbar .top-link a {
     margin-right: 10px;
+    background: white;
 }
 
+.topbar .top-link a:hover{
+ background: grey;
+    border: 0;
+}
 #note {
     width: 500px;
     overflow: hidden;
