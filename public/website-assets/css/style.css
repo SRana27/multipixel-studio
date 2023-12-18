@@ -2,12 +2,17 @@
 .bg-multipixel{
     background: #82219da3;
 }
-
+.bg-multipixeldark{
+    background: #17112e;
+}
 .bg-multipixeldeep{
     background: #6420a3;
 }
 .text-multipixel{
 color: #9205ba;
+}
+.bg-btn-multipixel{
+    background-color: #9205ba;
 }
 .text-multipixeldeep{
    color: rgba(87, 28, 127, 0.89);
@@ -122,10 +127,10 @@ color: #9205ba;
 /*** Topbar End ***/
 
 
-/*** Navbar Start ***/
-.navbar .navbar-nav {
-    padding: 15px 0;
-}
+/*!*** Navbar Start ***!*/
+/*.navbar .navbar-nav {*/
+/*    padding: 15px 0;*/
+/*}*/
 
 .navbar .navbar-nav .nav-link {
     padding: 10px;
@@ -545,7 +550,13 @@ color: #9205ba;
 .blog-item .blog-btn {
     z-index: 2;
 }
+.blog-description{
+    padding-top: 10px;
+    font-family: Roboto;
+    font-size:18px;
+    text-align: justify
 
+}
 .blog-btn .blog-btn-icon {
     height: 50px;
     position: relative;

@@ -71,7 +71,7 @@
             </button>
             <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                 <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Dashboard</a>
                     <a href="about-us.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <a href="project.html" class="nav-item nav-link">Projects</a>
@@ -970,7 +970,7 @@
             </button>
             <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                 <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Dashboard</a>
                     <a href="about-us.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <a href="project.html" class="nav-item nav-link">Projects</a>
@@ -1016,7 +1016,7 @@
         <h1 class="display-2 text-multipixeldeep mb-4 animated slideInDown">About Us</h1>
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb text-multipixeldeep justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item"><a href="#">Pages</a></li>
                 <li class="breadcrumb-item" aria-current="page">About</li>
             </ol>
@@ -1381,7 +1381,7 @@
             </button>
             <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                 <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Dashboard</a>
                     <a href="about-us.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <a href="project.html" class="nav-item nav-link">Projects</a>
@@ -1428,7 +1428,7 @@
         <h1 class="display-2 text-multipixeldeep mb-4 animated slideInDown">Latest Blog</h1>
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb text-multipixeldeep justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item"><a href="#">Pages</a></li>
                 <li class="breadcrumb-item" aria-current="page">Blog</li>
             </ol>
@@ -1758,7 +1758,7 @@
             </button>
             <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                 <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Dashboard</a>
                     <a href="about-us.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <a href="project.html" class="nav-item nav-link">Projects</a>
@@ -1805,7 +1805,7 @@
         <h1 class="display-2 text-multipixeldeep mb-4 animated slideInDown">Testimonial</h1>
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb text-multipixeldeep justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item"><a href="#">Pages</a></li>
                 <li class="breadcrumb-item" aria-current="page">Testimonial</li>
             </ol>
@@ -2106,7 +2106,7 @@
             </button>
             <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                 <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Dashboard</a>
                     <a href="about-us.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <a href="project.html" class="nav-item nav-link">Projects</a>
@@ -2153,7 +2153,7 @@
         <h1 class="display-2 text-multipixeldeep mb-4 animated slideInDown">Contact Us</h1>
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb text-multipixeldeep justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item"><a href="#">Pages</a></li>
                 <li class="breadcrumb-item" aria-current="page">Contact</li>
             </ol>
@@ -2436,7 +2436,7 @@
             </button>
             <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                 <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Dashboard</a>
                     <a href="about-us.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <a href="project.html" class="nav-item nav-link">Projects</a>
@@ -2482,7 +2482,7 @@
         <h1 class="display-2 text-multipixeldeep mb-4 animated slideInDown">Completed Project </h1>
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb text-multipixeldeep justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item"><a href="#">Pages</a></li>
                 <li class="breadcrumb-item" aria-current="page">Project</li>
             </ol>
@@ -2771,7 +2771,7 @@
             </button>
             <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                 <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Dashboard</a>
                     <a href="about-us.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <a href="project.html" class="nav-item nav-link">Projects</a>
@@ -2817,7 +2817,7 @@
         <h1 class="display-2 text-multipixeldeep mb-4 animated slideInDown">Completed Project </h1>
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb text-multipixeldeep justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item"><a href="#">Pages</a></li>
                 <li class="breadcrumb-item" aria-current="page">Project</li>
             </ol>
@@ -3105,7 +3105,7 @@
             </button>
             <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                 <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Dashboard</a>
                     <a href="about-us.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <a href="project.html" class="nav-item nav-link">Projects</a>
@@ -3152,7 +3152,7 @@
         <h1 class="display-2 text-multipixeldeep mb-4 animated slideInDown">Out team</h1>
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb text-multipixeldeep justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item"><a href="#">Pages</a></li>
                 <li class="breadcrumb-item" aria-current="page">Team</li>
             </ol>

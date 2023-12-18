@@ -63,30 +63,12 @@
                     <div class="blog-item position-relative bg-light rounded">
                         <img src="{{asset('/')}}website-assets/img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
                         <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">Development</span>
-                        <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
-                            <div class="blog-icon btn bg-multipixeldeep px-2 rounded-pill py-1">
-                                <a href="" class="btn text-white ">Read More</a>
-                            </div>
-                            <div class="blog-btn-icon btn bg-multipixeldeep px-3 py-3 ms-2 rounded-pill ">
-                                <div class="blog-icon-1">
-                                    <p class="btn text-white px-2">Share<i class="fa fa-arrow-right ms-2"></i></p>
-                                </div>
-                                <div class="blog-icon-2 px-2">
-                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-twitter text-white"></i></a>
-                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-instagram text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-                            <img src="{{asset('/')}}website-assets/img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
-                            <h5 class="text-dark">By Daniel Martin</h5>
+                        <div class="blog-content  text-center position-relative px-3" style="margin-top: 20px;">
                             <span class="text-multipixel">23 April 2023</span>
-                            <p class="py-2 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
-                        </div>
-                        <div class="blog-coments d-flex justify-content-between px-4 py-2 border bg-multipixeldeep rounded-bottom">
-                            <a href="" class="text-white"><small><i class="fas fa-share me-2 text-white"></i>5324 Share</small></a>
-                            <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-white"></i>5 Comments</small></a>
+                            <p class="blog-description text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet. Lorem ipsum dolor sit amet elit. Lorem ipsum dolor sit amet elit. Lorem ipsum dolor sit amet elit</p>
+                            <div class=" text-center ">
+                                <a href="#" class="btn bg-multipixeldeep text-white  px-4 py-2 mb-2 rounded-pill">Read More</a>
+                            </div>
                         </div>
                     </div>
                 </div>

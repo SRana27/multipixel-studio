@@ -12,32 +12,23 @@
             <ol class="carousel-indicators">
                 <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
                 <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="{{asset('/')}}website-assets/img/carousel-2.jpg" class="img-fluid" alt="First slide">
+                @foreach($carousels as $key=>$carousel)
+                <div class="carousel-item {{$key== 0 ? 'active':''}}">
+                    <img src="{{asset($carousel->image)}}" class="img-fluid" alt="First slide">
                     <div class="carousel-caption">
                         <div class="container carousel-content">
-                            <h6 class="text-white h4 animated fadeInUp">Best IT Solutions</h6>
-                            <h1 class="text-white display-1 mb-4 animated fadeInRight">An Innovative IT Solutions Agency</h1>
-                            <p class="mb-4 text-white fs-5 animated fadeInDown">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
+{{--                            <h6 class="text-white h4 animated fadeInUp">Best IT Solutions</h6>--}}
+                            <h1 class="text-white display-1 mb-4 animated fadeInRight">{{$carousel->title}}</h1>
+                            <p class="mb-4 text-white fs-5 animated fadeInDown">{{$carousel->description}}</p>
                             <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn bg-multipixeldeep rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
-                            <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn bg-multipixeldeep rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
+                            <a href="{{route('contact')}}" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn bg-multipixeldeep rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item ">
-                    <img src="{{asset('/')}}website-assets/img/carousel-1.jpg" class="img-fluid" alt="Second slide">
-                    <div class="carousel-caption">
-                        <div class="container carousel-content">
-                            <h6 class="text-white h4 animated fadeInUp">Best IT Solutions</h6>
-                            <h1 class="text-white display-1 mb-4 animated fadeInLeft">Quality Digital Services You Really Need!</h1>
-                            <p class="mb-4 text-white fs-5 animated fadeInDown">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
-                            <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn bg-multipixeldeep rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
-                            <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn bg-multipixeldeep rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -85,23 +76,24 @@
     <!-- About Start -->
     <div class="container-fluid py-5 my-5">
         <div class="container pt-5">
+            @foreach($abouts as $about)
             <div class="row g-5">
                 <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
                     <div class="h-100 position-relative">
-                        <img src="{{asset('/')}}website-assets/img/about-1.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
+                        <img src="{{asset($about->image_top)}}" class="img-fluid w-75 rounded" alt="image_top" style="margin-bottom: 25%;">
                         <div class="position-absolute w-75" style="top: 25%; left: 25%;">
-                            <img src="{{asset('/')}}website-assets/img/about-2.jpg" class="img-fluid w-100 rounded" alt="">
+                            <img src="{{asset($about->image_down)}}" class="img-fluid w-100 rounded" alt="image_down">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                    <h3 class="text-white">About Us</h3>
-                    <h1 class="mb-4 ">About HighTech Agency And It's Innovative IT Solutions</h1>
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
-                    <p class="mb-4 text-justify">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
-                    <a href="" class="btn bg-multipixeldeep rounded-pill px-5 py-3 text-white">More Details</a>
+                    <h3 class="text-white">{{$about->section_name}}</h3>
+                    <h1 class="mb-4 ">{{$about->title}}</h1>
+                    <p  style="font-family:Roboto;text-align: justify " >{{$about->description}}</p>
+                    <a href="" class="btn bg-multipixeldeep rounded-pill px-4 py-3 text-white" style="font-family:Poppins">More Details</a>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
     <!-- About End -->
@@ -121,9 +113,8 @@
                                 <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/videoedt.jpg" height="200px" width="100%" class="rounded">
                                 </div>
-{{--                                <i class="fa fa-code fa-7x mb-4 text-primary"></i>--}}
                                 <h3 class="mb-3 text-white ">Video Editing</h3>
-                                <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                <p class="mb-4 text-white" style="font-family:Poppins, sans-serif; font-size: 15px; text-align: justify">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum</p>
                                 <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
@@ -133,7 +124,6 @@
                     <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
-                                {{--                                <i class="fa fa-external-link-alt fa-7x mb-4 text-primary"></i>--}}
                                 <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/graphic.jpg" height="200px" width="100%" class="rounded">
                                 </div>
@@ -148,7 +138,6 @@
                     <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
-                                {{--                                <i class="fas fa-user-secret fa-7x mb-4 text-primary"></i>--}}
                                 <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/animation.jpg" height="200px" width="100%" class="rounded">
                                 </div>
@@ -164,7 +153,6 @@
                     <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
-                                {{--                                <i class="fa fa-envelope-open fa-7x mb-4 text-primary"></i>--}}
                                 <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/digital.jpg" height="200px" width="100%" class="rounded">
                                 </div>
@@ -179,7 +167,6 @@
                     <div class="services-item bg-service">
                         <div class="p-4 text-center services-content">
                             <div class="services-content-icon">
-                                {{--                                <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>--}}
                                 <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/logo-design-1.jpg" height="200px" width="100%" class="rounded">
                                 </div>
@@ -197,8 +184,6 @@
                                 <div class="mb-2">
                                     <img src="{{asset('/')}}website-assets/img/webdevelopment.jpg" height="200px" width="100%" class="rounded">
                                 </div>
-
-        {{--                                <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>--}}
                                 <h4 class="mb-3 text-white">Web Development</h4>
                                 <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
