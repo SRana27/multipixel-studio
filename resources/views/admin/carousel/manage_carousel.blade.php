@@ -36,7 +36,7 @@
 
                                     <td class="pt-5">{{$i++}}</td>
                                     <td  class="pt-5">{{$carousel->title}}</td>
-                                    <td  class="pt-5" style=" max-width:300px; overflow-x: scroll; white-space: nowrap;">{{$carousel->description}}</td>
+                                    <td  class="pt-5" style=" display: -webkit-box; -webkit-box-orient: vertical; overflow-y: scroll; height:50px; width:300px;text-align: justify">{{$carousel->description}}</td>
                                     <td><img src="{{asset($carousel->image)}}" alt="{{$carousel->name}}" height="80px" width="100px"></td>
                                     <td  class="pt-5" >{{$carousel->status ==1 ?'Published': 'Unpublished'}}</td>
                                     <td class="d-flex">

@@ -38,11 +38,11 @@
                                     <td class="pt-5">{{$i++}}</td>
                                     <td class="pt-5">{{$about->section_name}}</td>
                                     <td>{{$about->title}}</td>
-                                    <td class="pt-5" style="max-width:300px; overflow-x: scroll; white-space: nowrap;">{{$about->description}} </td>
+                                    <td class="pt-5" style=" display: -webkit-box; -webkit-box-orient: vertical; overflow-y: scroll; height:50px; width:300px;text-align: justify">{{$about->description}} </td>
                                     <td><img src="{{asset($about->image_top)}}" alt="image_top" height="80px"  width="100px"></td>
                                     <td><img src="{{asset($about->image_down)}}" alt="image_down" height="80px"  width="100px"></td>
-                                    <td class="d-flex ">
-                                        <a href="{{route('edit.about',['about_id'=>$about->id])}}" class=" btn btn-success mx-2 my-4 ">
+                                    <td class="d-flex  ">
+                                        <a href="{{route('edit.about',['about_id'=>$about->id])}}" class=" btn btn-success mx-2 my-4">
                                             <i class="ti-pencil-alt"></i>
                                         </a>
                                         @if(count($abouts)>1)
