@@ -36,7 +36,7 @@
 
                                     <td class="pt-5">{{$i++}}</td>
                                     <td  class="pt-5">{{$service->service_name}}</td>
-                                    <td  class="pt-5" style=" max-width:200px; overflow-x: scroll; white-space: nowrap;">{{$service->description}}</td>
+                                    <td  class="pt-5" style=" display: -webkit-box; -webkit-box-orient: vertical; overflow-y: scroll; height:50px; width:300px">{{$service->description}}</td>
                                     <td><img src="{{asset($service->image)}}" alt="{{$service->name}}" height="80px" width="100px"></td>
                                     <td  class="pt-5" >{{$service->status ==1 ?'Published': 'Unpublished'}}</td>
                                     <td class="d-flex justify-content-center">
