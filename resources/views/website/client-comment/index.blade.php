@@ -27,14 +27,14 @@
                 <h1>Our Client Saying!</h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
+                @foreach($comments as $comment)
                 <div class="testimonial-item border p-4">
                     <div class="d-flex align-items-center">
                         <div class="">
-                            <img src="{{asset('/')}}website-assets/img/testimonial-1.jpg" alt="">
+                            <img src="{{asset($comment->image)}}" alt="client-image" width="100px" height="100px">
                         </div>
                         <div class="ms-4">
-                            <h4 class="">Ms.jackling </h4>
-                            <p class="m-0 pb-3 ">Profession</p>
+                            <h4 class="">{{$comment->name}}</h4>
                             <div class="d-flex pe-5 ">
                                 <i class="fas fa-star me-1 "></i>
                                 <i class="fas fa-star me-1 "></i>
@@ -45,75 +45,12 @@
                         </div>
                     </div>
                     <div class="border-top mt-4 pt-3">
-                        <p class="mb-0  ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                        <p class="mb-0"  style=" display: -webkit-box;-webkit-line-clamp:5;-webkit-box-orient: vertical; overflow-y: scroll; height: 140px; text-align: justify;font-family:Roboto;font-size: 18px">{{$comment->description}}</p>
                     </div>
                 </div>
-                <div class="testimonial-item border p-4">
-                    <div class=" d-flex align-items-center">
-                        <div class="">
-                            <img src="{{asset('/')}}website-assets/img/testimonial-2.jpg" alt="">
-                        </div>
-                        <div class="ms-4">
-                            <h4 class="">Andertion</h4>
-                            <p class="m-0 pb-3">Profession</p>
-                            <div class="d-flex pe-5 ">
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border-top mt-4 pt-3">
-                        <p class="mb-0 ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item border p-4">
-                    <div class=" d-flex align-items-center">
-                        <div class="">
-                            <img src="{{asset('/')}}website-assets/img/testimonial-3.jpg" alt="">
-                        </div>
-                        <div class="ms-4">
-                            <h4 class="">Mrs. Sendy </h4>
-                            <p class="m-0 pb-3 ">Profession</p>
-                            <div class="d-flex pe-5 ">
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fa fa-star-o me-1" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border-top mt-4 pt-3">
-                        <p class="mb-0 " >Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item border p-4">
-                    <div class=" d-flex align-items-center">
-                        <div class="">
-                            <img src="{{asset('/')}}website-assets/img/testimonial-4.jpg" alt="">
-                        </div>
-                        <div class="ms-4">
-                            <h4 class="">Jons sina</h4>
-                            <p class="m-0 pb-3 ">Profession</p>
-                            <div class="d-flex pe-5 ">
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border-top mt-4 pt-3">
-                        <p class="mb-0 ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
-
     <!-- Testimonial End -->
 @endsection

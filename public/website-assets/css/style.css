@@ -717,12 +717,13 @@ color: #9205ba;
     height: 15px;
     background:#82219da3 ;
     border-radius: 15px;
-    transition: .5s;
+    transition: 10s;
 }
 
 .testimonial-carousel .owl-dot.active {
     width: 15px;
     background: #ffffff;
+    transition: 4s;
 }
 
 .testimonial-carousel .owl-item.center {
@@ -731,13 +732,13 @@ color: #9205ba;
 }
 
 .testimonial-carousel .owl-item .testimonial-item {
-    transition: .5s;
+    transition: 4s;
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
     background:#FFFFFF !important;
     color: #9205ba !important;
-    box-shadow: 0 0 30px #DDDDDD;
+    box-shadow: 0 0 30px #9205ba;
 }
 .testimonial-carousel .owl-item.center .testimonial-item p{
     color: #9205ba !important;

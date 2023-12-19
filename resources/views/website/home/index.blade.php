@@ -101,97 +101,31 @@
     <!-- Services Start -->
     <div class="container-fluid services py-5 mb-5">
         <div class="container">
-            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h3 class="text-white">Our Services</h3>
-                <h1>Services Built Specifically For Your Business</h1>
-            </div>
+            @foreach($sections as $section)
+                @if($section->section_name=='service')
+                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                        <h3 class="text-white">{{$section->section_title}}</h3>
+                        <h1>{{$section->section_tag}}</h1>
+                    </div>
+                @endif
+            @endforeach
             <div class="row g-5 services-inner">
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="services-item bg-service">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon">
-                                <div class="mb-2">
-                                    <img src="{{asset('/')}}website-assets/img/videoedt.jpg" height="200px" width="100%" class="rounded">
+                @foreach($services as $service)
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="services-item bg-service">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <div class="mb-2">
+                                        <img src="{{asset($service->image)}}" height="200px" width="100%" class="rounded" alt="service pic">
+                                    </div>
+                                    <h3 class="mb-3 pt-2 text-white ">{{$service->service_name}}</h3>
+                                    <p class="mb-4 text-white" style=" display: -webkit-box;-webkit-line-clamp:4;-webkit-box-orient: vertical; overflow: hidden; height: 100px;text-align: justify;font-family:Roboto;font-size: 18px">{{$service->description}}.</p>
+                                    <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                                 </div>
-                                <h3 class="mb-3 text-white ">Video Editing</h3>
-                                <p class="mb-4 text-white" style="font-family:Poppins, sans-serif; font-size: 15px; text-align: justify">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum</p>
-                                <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                    <div class="services-item bg-service">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon">
-                                <div class="mb-2">
-                                    <img src="{{asset('/')}}website-assets/img/graphic.jpg" height="200px" width="100%" class="rounded">
-                                </div>
-                                <h3 class="mb-3  text-white">Graphic Design</h3>
-                                <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="services-item bg-service">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon">
-                                <div class="mb-2">
-                                    <img src="{{asset('/')}}website-assets/img/animation.jpg" height="200px" width="100%" class="rounded">
-                                </div>
-                                <h4 class="mb-3 text-white">Animation</h4>
-                                <p class="mb-4 text-white ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                    <div class="services-item bg-service">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon">
-                                <div class="mb-2">
-                                    <img src="{{asset('/')}}website-assets/img/digital.jpg" height="200px" width="100%" class="rounded">
-                                </div>
-                                <h3 class="mb-3 text-white">Digital Marketing</h3>
-                                <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                    <div class="services-item bg-service">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon">
-                                <div class="mb-2">
-                                    <img src="{{asset('/')}}website-assets/img/logo-design-1.jpg" height="200px" width="100%" class="rounded">
-                                </div>
-                                <h3 class="mb-3 text-white">Logo Design</h3>
-                                <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                    <div class="services-item bg-service">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon">
-                                <div class="mb-2">
-                                    <img src="{{asset('/')}}website-assets/img/webdevelopment.jpg" height="200px" width="100%" class="rounded">
-                                </div>
-                                <h4 class="mb-3 text-white">Web Development</h4>
-                                <p class="mb-4 text-white">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
         </div>
     </div>
@@ -298,90 +232,28 @@
                 <h1>Our Client Saying!</h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
-                <div class="testimonial-item border p-4">
-                    <div class="d-flex align-items-center">
-                        <div class="">
-                            <img src="{{asset('/')}}website-assets/img/testimonial-1.jpg" alt="">
-                        </div>
-                        <div class="ms-4">
-                            <h4 class="">Ms.jackling </h4>
-                            <p class="m-0 pb-3 ">Profession</p>
-                            <div class="d-flex pe-5 ">
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
+                @foreach($comments as $comment)
+                    <div class="testimonial-item border p-4">
+                        <div class="d-flex align-items-center">
+                            <div class="">
+                                <img src="{{asset($comment->image)}}" alt="client-image" width="100px" height="100px">
+                            </div>
+                            <div class="ms-4">
+                                <h4 class="">{{$comment->name}}</h4>
+                                <div class="d-flex pe-5 ">
+                                    <i class="fas fa-star me-1 "></i>
+                                    <i class="fas fa-star me-1 "></i>
+                                    <i class="fas fa-star me-1 "></i>
+                                    <i class="fas fa-star me-1 "></i>
+                                    <i class="fas fa-star-half-alt me-1"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="border-top mt-4 pt-3">
-                        <p class="mb-0  ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                    </div>
-                </div>
-                <div class=" testimonial-item border p-4">
-                    <div class=" d-flex align-items-center">
-                        <div class="">
-                            <img src="{{asset('/')}}website-assets/img/testimonial-2.jpg" alt="">
-                        </div>
-                        <div class="ms-4">
-                            <h4 class="">Andertion</h4>
-                            <p class="m-0 pb-3">Profession</p>
-                            <div class="d-flex pe-5 ">
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                            </div>
+                        <div class="border-top mt-4 pt-3">
+                            <p class="mb-0"  style=" display: -webkit-box;-webkit-line-clamp:5;-webkit-box-orient: vertical; overflow-y: scroll; height: 140px; text-align: justify;font-family:Roboto;font-size: 18px">{{$comment->description}}</p>
                         </div>
                     </div>
-                    <div class="border-top mt-4 pt-3">
-                        <p class="mb-0 ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                    </div>
-                </div>
-                <div class=" testimonial-item border p-4">
-                    <div class=" d-flex align-items-center">
-                        <div class="">
-                            <img src="{{asset('/')}}website-assets/img/testimonial-3.jpg" alt="">
-                        </div>
-                        <div class="ms-4">
-                            <h4 class="">Mrs. Sendy </h4>
-                            <p class="m-0 pb-3 ">Profession</p>
-                            <div class="d-flex pe-5 ">
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border-top mt-4 pt-3">
-                        <p class="mb-0 " >Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                    </div>
-                </div>
-                <div class=" testimonial-item border p-4">
-                    <div class=" d-flex align-items-center">
-                        <div class="">
-                            <img src="{{asset('/')}}website-assets/img/testimonial-4.jpg" alt="">
-                        </div>
-                        <div class="ms-4">
-                            <h4 class="">Jons sina</h4>
-                            <p class="m-0 pb-3 ">Profession</p>
-                            <div class="d-flex pe-5 ">
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border-top mt-4 pt-3">
-                        <p class="mb-0 ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -395,100 +267,23 @@
                 <h3 class="text-white">Our Blog</h3>
                 <h1>Latest Blog & News</h1>
             </div>
+
             <div class="row g-5 justify-content-center">
-                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="blog-item position-relative bg-light rounded">
-                        <img src="{{asset('/')}}website-assets/img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="" height="100%">
-                        <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">Metting</span>
-                        <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
-                            <div class="blog-icon btn bg-multipixeldeep px-2 rounded-pill py-1">
-                                <a href="" class="btn text-white ">Read More</a>
-                            </div>
-                            <div class="blog-btn-icon btn bg-multipixeldeep px-3 py-3 ms-2 rounded-pill ">
-                                <div class="blog-icon-1">
-                                    <p class="btn text-white px-2">Share<i class="fa fa-arrow-right ms-2"></i></p>
-                                </div>
-                                <div class="blog-icon-2 px-2">
-                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-twitter text-white"></i></a>
-                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-instagram text-white"></i></a>
+                @foreach($blogs as $blog)
+                    <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".4s">
+                        <div class="blog-item position-relative bg-light rounded">
+                            <img src="{{asset($blog->image)}}" class=" w-100 rounded-top" alt="" height="300px">
+                            <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">{{$blog->blog_type}}</span>
+                            <div class="blog-content  text-center position-relative px-3" style="margin-top: 20px;">
+                                <span class="text-multipixel">Date: {{$blog->date}}</span>
+                                <p class="blog-description text-multipixel">{{$blog->description}}</p>
+                                <div class=" text-center ">
+                                    <a href="#" class="btn bg-multipixeldeep text-white  px-4 py-2 mb-2 rounded-pill">Read More</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="blog-content text-center  px-3" style="margin-top: -25px;">
-                            <img src="{{asset('/')}}website-assets/img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
-                            <h5 class="text-dark ">By Daniel Martin</h5>
-                            <span class="text-multipixel">24 March 2023</span>
-                            <p class="py-2 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
-                        </div>
-                        <div class="blog-coments d-flex justify-content-between px-4 py-2 border bg-multipixeldeep rounded-bottom">
-                            <a href="" class="text-white"><small><i class="fas fa-share me-2 text-white"></i>5324 Share</small></a>
-                            <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-white"></i>5 Comments</small></a>
                         </div>
                     </div>
-                </div>
-                <div class=" col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
-                    <div class="blog-item position-relative bg-light rounded">
-                        <img src="{{asset('/')}}website-assets/img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">Development</span>
-                        <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
-                            <div class="blog-icon btn bg-multipixeldeep px-2 rounded-pill py-1">
-                                <a href="" class="btn text-white ">Read More</a>
-                            </div>
-                            <div class="blog-btn-icon btn bg-multipixeldeep px-3 py-3 ms-2 rounded-pill ">
-                                <div class="blog-icon-1">
-                                    <p class="btn text-white px-2">Share<i class="fa fa-arrow-right ms-2"></i></p>
-                                </div>
-                                <div class="blog-icon-2 px-2">
-                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-twitter text-white"></i></a>
-                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-instagram text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-                            <img src="{{asset('/')}}website-assets/img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
-                            <h5 class="text-dark">By Daniel Martin</h5>
-                            <span class="text-multipixel">23 April 2023</span>
-                            <p class="py-2 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
-                        </div>
-                        <div class="blog-coments d-flex justify-content-between px-4 py-2 border bg-multipixeldeep rounded-bottom">
-                            <a href="" class="text-white"><small><i class="fas fa-share me-2 text-white"></i>5324 Share</small></a>
-                            <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-white"></i>5 Comments</small></a>
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
-                    <div class="blog-item position-relative bg-light rounded">
-                        <img src="{{asset('/')}}website-assets/img/blog-3.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">Mobile App</span>
-                        <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
-                            <div class="blog-icon btn bg-multipixeldeep px-2 rounded-pill py-1">
-                                <a href="" class="btn text-white ">Read More</a>
-                            </div>
-                            <div class="blog-btn-icon btn bg-multipixeldeep px-3 py-3 ms-2 rounded-pill ">
-                                <div class="blog-icon-1">
-                                    <p class="btn text-white px-2">Share<i class="fa fa-arrow-right ms-2"></i></p>
-                                </div>
-                                <div class="blog-icon-2 px-2">
-                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-twitter text-white"></i></a>
-                                    <a href="" class="blog-btn-social pt-2 me-3 "><i class="fab fa-instagram text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-                            <img src="{{asset('/')}}website-assets/img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
-                            <h5 class="text-dark">By Daniel Martin</h5>
-                            <span class="text-multipixel">30 jan 2023</span>
-                            <p class="py-2 text-multipixel">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
-                        </div>
-                        <div class="blog-coments d-flex justify-content-between px-4 py-2 border bg-multipixeldeep rounded-bottom">
-                            <a href="" class="text-white"><small><i class="fas fa-share me-2 text-white"></i>5324 Share</small></a>
-                            <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-white"></i>5 Comments</small></a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -503,82 +298,24 @@
                 <h1>Meet our expert Team</h1>
             </div>
             <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
-                <div class="rounded team-item">
-                    <div class="team-content">
-                        <div class="team-img-icon">
-                            <div class="team-img rounded-circle">
-                                <img src="{{asset('/')}}website-assets/img/team/boss.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                            </div>
-                            <div class="team-name text-center py-3">
-                                <h4 class="">Nabil </h4>
-                                <p class="m-0 text-multipixeldeep">Head of department</p>
-                            </div>
-                            <div class="team-icon d-flex justify-content-center pb-4">
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="rounded team-item">
-                    <div class="team-content">
-                        <div class="team-img-icon">
-                            <div class="team-img rounded-circle">
-                                <img src="{{asset('/')}}website-assets/img/team/maruf.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                            </div>
-                            <div class="team-name text-center py-3">
-                                <h4 class="">abdullah al maruf</h4>
-                                <p class="m-0 text-multipixeldeep">Video editor</p>
-                            </div>
-                            <div class="team-icon d-flex justify-content-center pb-4">
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                @foreach($members as $member)
+                    <div class="rounded team-item">
+                        <div class="team-content">
+                            <div class="team-img-icon">
+                                <div class="team-img rounded-circle">
+                                    <img src="{{asset($member->image)}}" class="img-fluid w-100 rounded-circle" alt="">
+                                </div>
+                                <div class="team-name text-center pt-2">
+                                    <h4 class="pt-2">{{$member->member_name}}</h4>
+                                    <p class="m-0 text-multipixeldeep">{{$member->designation}}</p>
+                                </div>
+                                <div class="text-center pb-4">
+                                    <h4 >MULTIPIXEL STUDIO </h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="rounded team-item">
-                    <div class="team-content">
-                        <div class="team-img-icon">
-                            <div class="team-img rounded-circle">
-                                <img src="{{asset('/')}}website-assets/img/team-3.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                            </div>
-                            <div class="text-center py-3">
-                                <h4 >TBA</h4>
-                                <p class="m-0 text-multipixeldeep">Designation</p>
-                            </div>
-                            <div class="team-icon d-flex justify-content-center pb-4">
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="rounded team-item">
-                    <div class="team-content">
-                        <div class="team-img-icon">
-                            <div class="team-img rounded-circle">
-                                <img src="{{asset('/')}}website-assets/img/team-4.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                            </div>
-                            <div class="team-name text-center py-3">
-                                <h4 class="">Tba</h4>
-                                <p class="m-0 text-multipixeldeep">Designation</p>
-                            </div>
-                            <div class="team-icon d-flex justify-content-center pb-4">
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -590,7 +327,6 @@
             <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                 <h3 class="text-white">Get In Touch</h3>
                 <h1 class="mb-3">Contact for any query</h1>
-                <p class="mb-2">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done.</p>
             </div>
             <div class="contact-detail position-relative p-3">
                 <div class="row g-5 justify-content-center">

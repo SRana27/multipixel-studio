@@ -66,8 +66,8 @@
             <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-grid2"></i>
                     <span class="hide-menu">Comment Module</span></a>
                 <ul aria-expanded="false" class="collapse">
-                    <li><a href="#">Add comment</a></li>
-                    <li><a href="#">Manage comment</a></li>
+                    <li><a href="{{route('add.comment')}}"><i class="icon-plus" aria-hidden="true"></i> Add Comment</a></li>
+                    <li><a href="{{route('manage.comment')}}"><i class="icon-settings" aria-hidden="true"></i> Manage Comment</a></li>
                 </ul>
             </li>
 

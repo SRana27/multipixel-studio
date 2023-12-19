@@ -9,6 +9,8 @@ use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\CommentController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -96,5 +98,16 @@ Route::get('/client-comment',[WebsiteController::class,'comment'])->name('commen
             Route::get('/edit-blog/{blog_id}','editBlog')->name('edit.blog');
             Route::post('/update-blog','updateBlog')->name('update.blog');
             Route::post('/delete-blog','deleteBlog')->name('delete.blog');
+        });
+
+        Route::controller(CommentController::class)->group(function()
+        {
+            Route::get('/add-comment','addComment')->name('add.comment');
+            Route::post('/store-comment','saveComment')->name('save.comment');
+            Route::get('/manage-comment','manageComment')->name('manage.comment');
+            Route::get('/edit-comment/{comment_id}','editComment')->name('edit.comment');
+            Route::post('/update-comment','updateComment')->name('update.comment');
+            Route::get('/update-status-comment/{comment_id}','statusUpdate')->name('updateStatus.comment');
+            Route::post('/delete-comment','deleteComment')->name('delete.comment');
         });
     });

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\About;
+use App\Models\Blog;
 use App\Models\Carousel;
+use App\Models\Comment;
 use App\Models\Section;
 use App\Models\Service;
 use App\Models\TeamMember;
@@ -15,12 +17,19 @@ public function index()
     return view('website.home.index',
     [   'carousels' => Carousel::OrderBy('id','desc')->take('3')->where('status',1)->get(),
         'abouts' =>About::OrderBy('id','desc')->take('1')->get(),
-        'services'=> Service::orderBy('id','desc')->take('6')->where('status',1)->get()
+        'services'=> Service::orderBy('id','desc')->take('6')->where('status',1)->get(),
+        'sections'=>Section::all(),
+        'comments'=>Comment::orderBy('id','desc')->take('4')->where('status',1)->get(),
+        'blogs'=>Blog::orderBy('id','desc')->take('3')->get(),
+        'members'=>TeamMember::all()
     ]);
 }
     public function about()
     {
-        return view('website.about.index');
+        return view('website.about.index',
+        [   'abouts' =>About::OrderBy('id','desc')->take('1')->get(),
+            'members'=>TeamMember::all()
+        ]);
     }
 
     public function service()
@@ -43,12 +52,16 @@ public function index()
     }
     public function blog()
     {
-        return view('website.blog.index');
+        return view('website.blog.index',
+        [ 'blogs'=>Blog::orderBy('id','desc')->take('3')->get()]);
     }
 
      public function comment()
     {
-        return view('website.client-comment.index');
+            return view('website.client-comment.index',
+            [
+                'comments'=>Comment::orderBy('id','desc')->take('4')->where('status',1)->get()
+            ]);
     }
     public function team()
     {

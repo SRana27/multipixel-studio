@@ -22,29 +22,28 @@
         <!-- About Start -->
         <div class="container-fluid py-5 my-5">
             <div class="container pt-5">
-                <div class="row g-5">
-                    <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
-                        <div class="h-100 position-relative">
-                            <img src="{{asset('/')}}website-assets/img/about-1.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
-                            <div class="position-absolute w-75" style="top: 25%; left: 25%;">
-                                <img src="{{asset('/')}}website-assets/img/about-2.jpg" class="img-fluid w-100 rounded" alt="">
+                @foreach($abouts as $about)
+                    <div class="row g-5">
+                        <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                            <div class="h-100 position-relative">
+                                <img src="{{asset($about->image_top)}}" class="img-fluid w-75 rounded" alt="image_top" style="margin-bottom: 25%;">
+                                <div class="position-absolute w-75" style="top: 25%; left: 25%;">
+                                    <img src="{{asset($about->image_down)}}" class="img-fluid w-100 rounded" alt="image_down">
+                                </div>
                             </div>
                         </div>
+                        <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                            <h3 class="text-white">{{$about->section_name}}</h3>
+                            <h1 class="mb-4 ">{{$about->title}}</h1>
+                            <p  style="font-family:Roboto;text-align: justify " >{{$about->description}}</p>
+                            <a href="" class="btn bg-multipixeldeep rounded-pill px-4 py-3 text-white" style="font-family:Poppins">More Details</a>
+                        </div>
                     </div>
-                    <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                        <h3 class="text-white">About Us</h3>
-                        <h1 class="mb-4">About HighTech Agency And It's Innovative IT Solutions</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
-                        <p class="mb-4">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
-                        <a href="" class="btn bg-multipixeldeep rounded-pill px-5 py-3 text-white">More Details</a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
         <!-- About End -->
 
-
-        <!-- Team Start -->
         <div class="container-fluid py-5 mb-5 team">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
@@ -52,87 +51,26 @@
                     <h1>Meet our expert Team</h1>
                 </div>
                 <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="{{asset('/')}}website-assets/img/team/boss.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">Nabil </h4>
-                                    <p class="m-0 text-multipixeldeep">Head of department</p>
-                                </div>
-                                <div class="team-icon d-flex justify-content-center pb-4">
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="{{asset('/')}}website-assets/img/team/maruf.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">abdullah al maruf</h4>
-                                    <p class="m-0 text-multipixeldeep">Video editor</p>
-                                </div>
-                                <div class="team-icon d-flex justify-content-center pb-4">
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    @foreach($members as $member)
+                        <div class="rounded team-item">
+                            <div class="team-content">
+                                <div class="team-img-icon">
+                                    <div class="team-img rounded-circle">
+                                        <img src="{{asset($member->image)}}" class="img-fluid w-100 rounded-circle" alt="">
+                                    </div>
+                                    <div class="team-name text-center pt-2">
+                                        <h4 class="pt-2">{{$member->member_name}}</h4>
+                                        <p class="m-0 text-multipixeldeep">{{$member->designation}}</p>
+                                    </div>
+                                    <div class="text-center pb-4">
+                                        <h4 >MULTIPIXEL STUDIO </h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="{{asset('/')}}website-assets/img/team-3.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">TBA</h4>
-                                    <p class="m-0 text-multipixeldeep">Designation</p>
-                                </div>
-                                <div class="team-icon d-flex justify-content-center pb-4">
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="{{asset('/')}}website-assets/img/team-4.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">Tba</h4>
-                                    <p class="m-0 text-multipixeldeep">Designation</p>
-                                </div>
-                                <div class="team-icon d-flex justify-content-center pb-4">
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-secondary text-multipixel rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
-        <!-- Team End -->
-
-
-        @endsection
+    @endsection
 
