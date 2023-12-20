@@ -9,6 +9,7 @@
 <script src="{{asset('/')}}website-assets/lib/owlcarousel/owl.carousel.min.js"></script>
 <!-- Template Javascript -->
 <script src="{{asset('/')}}website-assets/js/main.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <script>
     const activePage=window.location.href;
@@ -31,3 +32,37 @@
         }
     })
     </script>
+<script>
+    $('#submit').click(function () {
+      var name=$('#name').val();
+      var email=$('#email').val()
+        var subject=$('#subject').val()
+        var message=$('#message').val()
+
+        function IsEmail(email) {
+            const regex = /([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            if (!regex.test(email)) {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+         if( name == '' || email == '' || subject == '' || message ==''){
+             swal("Empty field!", "please fill the empty field ","error");
+             return false;
+         }else
+        if(IsEmail(email) === false) {
+             swal("Invalid email!", "please enter valid ","error");
+
+        }else if(IsEmail(email) === true){
+             swal("success!", "send message successfully ","success");
+
+        }
+
+
+    });
+</script>
+
+

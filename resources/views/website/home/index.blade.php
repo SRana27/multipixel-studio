@@ -19,8 +19,16 @@
                 <div class="carousel-item {{$key== 0 ? 'active':''}}">
                     <img src="{{asset($carousel->image)}}" class="img-fluid" alt="First slide">
                     <div class="carousel-caption">
+
                         <div class="container carousel-content">
 {{--                            <h6 class="text-white h4 animated fadeInUp">Best IT Solutions</h6>--}}
+                            @if($message=Session::get('message'))
+
+                                <div class="alert alert-success alert-dismissible fade show text-center">
+                                    {{$message}}
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-lebel="close"></button>
+                                </div>
+                            @endif
                             <h1 class="text-white display-1 mb-4 animated fadeInRight">{{$carousel->title}}</h1>
                             <p class="mb-4 text-white fs-5 animated fadeInDown">{{$carousel->description}}</p>
                             <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn bg-multipixeldeep rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
@@ -136,10 +144,14 @@
     <!-- Project Start -->
     <div class="container-fluid project py-5 mb-5">
         <div class="container">
-            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h3 class="text-white">Our Project</h3>
-                <h1>Our Recently Completed Projects</h1>
-            </div>
+            @foreach($sections as $section)
+                @if($section->section_name=='project')
+                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                        <h3 class="text-white">{{$section->section_title}}</h3>
+                        <h1>{{$section->section_tag}}</h1>
+                    </div>
+                @endif
+            @endforeach
             <div class="row g-5">
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="project-item">
@@ -227,10 +239,14 @@
     <!-- Testimonial Start -->
     <div class="container-fluid testimonial py-5 mb-5">
         <div class="container">
-            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h3 class="text-white">Our Testimonial</h3>
-                <h1>Our Client Saying!</h1>
-            </div>
+            @foreach($sections as $section)
+                @if($section->section_name=='comment')
+                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                        <h3 class="text-white">{{$section->section_title}}</h3>
+                        <h1>{{$section->section_tag}}</h1>
+                    </div>
+                @endif
+            @endforeach
             <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
                 @foreach($comments as $comment)
                     <div class="testimonial-item border p-4">
@@ -263,10 +279,14 @@
     <!-- Blog Start -->
     <div class="container-fluid blog py-5 mb-5">
         <div class="container">
-            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h3 class="text-white">Our Blog</h3>
-                <h1>Latest Blog & News</h1>
-            </div>
+            @foreach($sections as $section)
+                @if($section->section_name=='blog')
+                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                        <h3 class="text-white">{{$section->section_title}}</h3>
+                        <h1>{{$section->section_tag}}</h1>
+                    </div>
+                @endif
+            @endforeach
 
             <div class="row g-5 justify-content-center">
                 @foreach($blogs as $blog)
@@ -373,22 +393,31 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12  wow fadeIn" data-wow-delay=".5s">
-                        <div class=" rounded contact-form">
-                            <div class="mb-4 ">
-                                <input type="text" class="form-control border-0 py-3" placeholder="Your Name">
-                            </div>
-                            <div class="mb-4">
-                                <input type="email" class="form-control border-0 py-3" placeholder="Your Email">
-                            </div>
-                            <div class="mb-4">
-                                <input type="text" class="form-control border-0 py-3" placeholder="subject">
-                            </div>
-                            <div class="mb-4">
-                                <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Message"></textarea>
-                            </div>
-                            <div class="text-start">
-                                <button  class="btn bg-multipixeldeep py-2 text-white px-4" type="button">Send Message</button>
-                            </div>
+                        <div class=" rounded contact-form" style="font-family: Roboto">
+                            <form action="{{route('save.message')}}" method="post">
+                                @csrf
+                                <div class="mb-4 ">
+                                    <input type="text" class="form-control border-0 py-3" id="name"  name="name"
+                                           placeholder="Your Name">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" class="form-control border-0 py-3"  name="email"
+                                       id="email"  placeholder="Your Email">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control border-0 py-3" name="subject"
+                                        id="subject"  placeholder="Subject">
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" name="message"
+                                             id="message"  placeholder="Message"></textarea>
+                                </div>
+                                <div class="text-start">
+                                    <button id="submit" class="btn bg-multipixeldeep py-2 text-white px-4" type="submit">Send
+                                        Message
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

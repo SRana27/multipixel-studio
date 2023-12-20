@@ -21,10 +21,14 @@
     <!-- Team Start -->
     <div class="container-fluid py-5 mb-5 team">
         <div class="container">
-            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h3 class="text-white">Our Team</h3>
-                <h1>Meet our expert Team</h1>
-            </div>
+            @foreach($sections as $section)
+                @if($section->section_name=='team')
+                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                        <h3 class="text-white">{{$section->section_title}}</h3>
+                        <h1>{{$section->section_tag}}</h1>
+                    </div>
+                @endif
+            @endforeach
             <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
                 @foreach($members as $member)
                 <div class="rounded team-item">

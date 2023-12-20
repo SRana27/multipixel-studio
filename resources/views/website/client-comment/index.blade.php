@@ -22,10 +22,14 @@
     <!-- Testimonial Start -->
     <div class="container-fluid testimonial py-5 mb-5">
         <div class="container">
-            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h3 class="text-white">Our Testimonial</h3>
-                <h1>Our Client Saying!</h1>
-            </div>
+            @foreach($sections as $section)
+                @if($section->section_name=='comment')
+                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                        <h3 class="text-white">{{$section->section_title}}</h3>
+                        <h1>{{$section->section_tag}}</h1>
+                    </div>
+                @endif
+            @endforeach
             <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
                 @foreach($comments as $comment)
                 <div class="testimonial-item border p-4">

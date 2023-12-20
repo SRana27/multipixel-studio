@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\CommentController;
+use App\Http\Controllers\Admin\ContactController;
 
 
 /*
@@ -34,6 +35,7 @@ Route::get('/contact',[WebsiteController::class,'contact'])->name('contact');
 Route::get('/blog',[WebsiteController::class,'blog'])->name('blog');
 Route::get('/team',[WebsiteController::class,'team'])->name('team');
 Route::get('/client-comment',[WebsiteController::class,'comment'])->name('comment');
+Route::post('/form',[ContactController::class,'contactForm'])->name('save.message');
 
 
 
@@ -110,4 +112,6 @@ Route::get('/client-comment',[WebsiteController::class,'comment'])->name('commen
             Route::get('/update-status-comment/{comment_id}','statusUpdate')->name('updateStatus.comment');
             Route::post('/delete-comment','deleteComment')->name('delete.comment');
         });
+
+
     });

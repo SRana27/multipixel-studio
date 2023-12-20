@@ -22,11 +22,14 @@
     <!-- Contact Start -->
     <div class="container-fluid py-5 mb-5">
         <div class="container">
-            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h3 class="text-white">Get In Touch</h3>
-                <h1 class="mb-3">Contact for any query</h1>
-                <p class="mb-2">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done.</p>
-            </div>
+            @foreach($sections as $section)
+                @if($section->section_name=='contact')
+                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                        <h3 class="text-white">{{$section->section_title}}</h3>
+                        <h1>{{$section->section_tag}}</h1>
+                    </div>
+                @endif
+            @endforeach
             <div class="contact-detail position-relative p-5">
                 <div class="row g-5 justify-content-center">
                     <div class="col-xl-4 col-lg-6 wow fadeIn " data-wow-delay=".3s">
@@ -72,22 +75,31 @@
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                        <div class="p-5 rounded contact-form">
-                            <div class="mb-4">
-                                <input type="text" class="form-control border-0 py-3" placeholder="Your Name">
-                            </div>
-                            <div class="mb-4">
-                                <input type="email" class="form-control border-0 py-3" placeholder="Your Email">
-                            </div>
-                            <div class="mb-4">
-                                <input type="text" class="form-control border-0 py-3" placeholder="subject">
-                            </div>
-                            <div class="mb-4">
-                                <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Message"></textarea>
-                            </div>
-                            <div class="text-start">
-                                <button  class="btn bg-multipixeldeep py-2 text-white px-4" type="button">Send Message</button>
-                            </div>
+                        <div class="p-5 rounded contact-form " style="font-family: Roboto">
+                            <form action="{{route('save.message')}}" method="post">
+                                @csrf
+                                <div class="mb-4 ">
+                                    <input type="text" class="form-control border-0 py-3" id="name"  name="name"
+                                           placeholder="Your Name">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" class="form-control border-0 py-3"  name="email"
+                                           id="email"  placeholder="Your Email">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control border-0 py-3" name="subject"
+                                           id="subject"  placeholder="Subject">
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" name="message"
+                                              id="message"  placeholder="Message"></textarea>
+                                </div>
+                                <div class="text-start">
+                                    <button id="submit" class="btn bg-multipixeldeep py-2 text-white px-4" type="submit">Send
+                                        Message
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

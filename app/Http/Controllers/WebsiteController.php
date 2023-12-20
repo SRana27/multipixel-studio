@@ -10,6 +10,7 @@ use App\Models\Section;
 use App\Models\Service;
 use App\Models\TeamMember;
 
+
 class WebsiteController extends Controller
 {
 public function index()
@@ -28,7 +29,8 @@ public function index()
     {
         return view('website.about.index',
         [   'abouts' =>About::OrderBy('id','desc')->take('1')->get(),
-            'members'=>TeamMember::all()
+            'members'=>TeamMember::all(),
+            'sections'=>Section::all()
         ]);
     }
 
@@ -43,30 +45,37 @@ public function index()
 
     public function project()
     {
-        return view('website.project.index');
+        return view('website.project.index',[
+        'sections'=>Section::all()]);
     }
 
     public function contact()
     {
-        return view('website.contact.index');
+        return view('website.contact.index',[
+            'sections'=>Section::all()]);
     }
     public function blog()
     {
         return view('website.blog.index',
-        [ 'blogs'=>Blog::orderBy('id','desc')->take('3')->get()]);
+        [ 'blogs'=>Blog::orderBy('id','desc')->take('3')->get(),
+            'sections'=>Section::all() ]);
     }
 
      public function comment()
     {
             return view('website.client-comment.index',
             [
-                'comments'=>Comment::orderBy('id','desc')->take('4')->where('status',1)->get()
+                'comments'=>Comment::orderBy('id','desc')->take('4')->where('status',1)->get(),
+                'sections'=>Section::all()
             ]);
     }
     public function team()
     {
         return view('website.team.index',[
-            'members'=>TeamMember::all()
+            'members'=>TeamMember::all(),
+            'sections'=>Section::all()
         ]);
     }
+
+
 }
