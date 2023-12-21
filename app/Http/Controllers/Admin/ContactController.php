@@ -15,4 +15,11 @@ class ContactController extends Controller
         return back();
 
     }
+    public function contactMessage()
+    {
+        return view('admin.message.index',[
+           'messages'=>Contact::all()
+        ]);
+    }
+
 }

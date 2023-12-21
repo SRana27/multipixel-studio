@@ -70,7 +70,13 @@
                     <li><a href="{{route('manage.comment')}}"><i class="icon-settings" aria-hidden="true"></i> Manage Comment</a></li>
                 </ul>
             </li>
+            <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-grid2"></i>
+                    <span class="hide-menu">Contact Module</span></a>
+                <ul aria-expanded="false" class="collapse">
+                    <li><a href="{{route('client.message')}}"><i class="icons-Tablet"></i> Message Table</a></li>
 
+                </ul>
+            </li>
             <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-settings"></i>
                     <span class="hide-menu">Setting Module</span></a>
 

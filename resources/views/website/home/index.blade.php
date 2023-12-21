@@ -266,7 +266,7 @@
                             </div>
                         </div>
                         <div class="border-top mt-4 pt-3">
-                            <p class="mb-0"  style=" display: -webkit-box;-webkit-line-clamp:5;-webkit-box-orient: vertical; overflow-y: scroll; height: 140px; text-align: justify;font-family:Roboto;font-size: 18px">{{$comment->description}}</p>
+                            <p class="mb-0 p-2"  style=" display: -webkit-box;-webkit-box-orient: vertical; overflow-y: scroll; height: 140px; text-align: justify;font-family:Roboto;font-size: 18px">{{$comment->description}}</p>
                         </div>
                     </div>
                 @endforeach
@@ -276,38 +276,6 @@
 
     <!-- Testimonial End -->
 
-    <!-- Blog Start -->
-    <div class="container-fluid blog py-5 mb-5">
-        <div class="container">
-            @foreach($sections as $section)
-                @if($section->section_name=='blog')
-                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                        <h3 class="text-white">{{$section->section_title}}</h3>
-                        <h1>{{$section->section_tag}}</h1>
-                    </div>
-                @endif
-            @endforeach
-
-            <div class="row g-5 justify-content-center">
-                @foreach($blogs as $blog)
-                    <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".4s">
-                        <div class="blog-item position-relative bg-light rounded">
-                            <img src="{{asset($blog->image)}}" class=" w-100 rounded-top" alt="" height="300px">
-                            <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">{{$blog->blog_type}}</span>
-                            <div class="blog-content  text-center position-relative px-3" style="margin-top: 20px;">
-                                <span class="text-multipixel">Date: {{$blog->date}}</span>
-                                <p class="blog-description text-multipixel">{{$blog->description}}</p>
-                                <div class=" text-center ">
-                                    <a href="#" class="btn bg-multipixeldeep text-white  px-4 py-2 mb-2 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </div>
-    <!-- Blog End -->
 
 
     <!-- Team Start -->
@@ -340,6 +308,38 @@
         </div>
     </div>
     <!-- Team End -->
+    <!-- Blog Start -->
+    <div class="container-fluid blog py-5 mb-5">
+        <div class="container">
+            @foreach($sections as $section)
+                @if($section->section_name=='blog')
+                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                        <h3 class="text-white">{{$section->section_title}}</h3>
+                        <h1>{{$section->section_tag}}</h1>
+                    </div>
+                @endif
+            @endforeach
+
+            <div class="row g-5 justify-content-center">
+                @foreach($blogs as $blog)
+                    <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".4s">
+                        <div class="blog-item position-relative bg-light rounded">
+                            <img src="{{asset($blog->image)}}" class=" w-100 rounded-top" alt="" height="300px">
+                            <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">{{$blog->blog_type}}</span>
+                            <div class="blog-content  text-center position-relative px-3" style="margin-top: 20px;">
+                                <span class="text-multipixel">Date: {{$blog->date}}</span>
+                                <p class="blog-description text-multipixel">{{$blog->description}}</p>
+                                <div class=" text-center ">
+                                    <a href="#" class="btn bg-multipixeldeep text-white  px-4 py-2 mb-2 rounded-pill">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
 
     <!-- Contact Start -->
     <div class="container-fluid py-5 mb-5">

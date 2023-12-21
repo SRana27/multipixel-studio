@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="border-top mt-4 pt-3">
-                        <p class="mb-0"  style=" display: -webkit-box;-webkit-line-clamp:5;-webkit-box-orient: vertical; overflow-y: scroll; height: 140px; text-align: justify;font-family:Roboto;font-size: 18px">{{$comment->description}}</p>
+                        <p class="mb-0 p-2"  style=" display: -webkit-box;-webkit-box-orient: vertical; overflow-y: scroll; height: 140px; text-align: justify;font-family:Roboto;font-size: 18px">{{$comment->description}}</p>
                     </div>
                 </div>
                 @endforeach

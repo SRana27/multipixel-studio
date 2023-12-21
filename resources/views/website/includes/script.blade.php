@@ -9,7 +9,8 @@
 <script src="{{asset('/')}}website-assets/lib/owlcarousel/owl.carousel.min.js"></script>
 <!-- Template Javascript -->
 <script src="{{asset('/')}}website-assets/js/main.js"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="{{asset('/')}}website-assets/js/sweetalert.mim.js"></script>
+
 
 <script>
     const activePage=window.location.href;
@@ -54,15 +55,17 @@
              return false;
          }else
         if(IsEmail(email) === false) {
-             swal("Invalid email!", "please enter valid ","error");
+             swal("Invalid email!", "please enter valid email","error");
+            return false;
 
-        }else if(IsEmail(email) === true){
-             swal("success!", "send message successfully ","success");
+        }else if(IsEmail(email) === true) {
+            swal("success!", "send message successfully ","success");
+
 
         }
 
 
-    });
+    })
 </script>
 
 
