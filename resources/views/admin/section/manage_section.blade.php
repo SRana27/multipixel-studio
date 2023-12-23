@@ -36,7 +36,7 @@
                                     <td class="pt-5">{{$i++}}</td>
                                     <td class="pt-5">{{$section->section_name}}</td>
                                     <td class="pt-5">{{$section->section_title}}</td>
-                                    <td class="pt-5" style="max-width:250px; overflow-x: scroll; white-space: nowrap;">{{$section->section_tag}} </td>
+                                    <td class="pt-5" style="max-width:250px; overflow-y: scroll; white-space: nowrap;">{{$section->section_tag}} </td>
                                     <td class="d-flex ">
                                         <a href="{{route('edit.section',['section_id'=>$section->id])}}" class=" btn btn-success mx-2 my-4 ">
                                             <i class="ti-pencil-alt"></i>
