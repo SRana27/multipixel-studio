@@ -22,6 +22,7 @@
                             <tr class="text-center">
                                 <th>sl</th>
                                 <th>Name</th>
+                                <th>Ratting</th>
                                 <th>Comment</th>
                                 <th>Image</th>
                                 <th>Status</th>
@@ -37,6 +38,7 @@
                                     <td class="pt-5">{{$i++}}</td>
                                     <td  class="pt-5">{{$comment->name}}</td>
                                     <td  class="pt-5"  style=" display: -webkit-box;-webkit-box-orient: vertical; overflow-y: scroll; height:50px;">{{$comment->description}}</td>
+                                    <td  class="pt-5">{{$comment->ratting}}</td>
                                     <td><img src="{{asset($comment->image)}}" alt="{{$comment->name}}" height="80px" width="100px"></td>
                                     <td  class="pt-5" >{{$comment->status ==1 ?'Published': 'Unpublished'}}</td>
                                     <td class="d-flex">

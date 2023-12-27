@@ -31,6 +31,12 @@
                             </div>
                         </div>
                         <div class="form-group row">
+                            <label for="rating" class="col-sm-3 control-label">Description<span class="text-danger">*</span></label>
+                            <div class="col-sm-9">
+                             <input type="number" class="form-control" id="rating" required name="ratting" placeholder="ratting" max="5" min="1"  >
+                            </div>
+                        </div>
+                        <div class="form-group row">
                             <label class="form-label col-sm-3 control-label" for="web"> Image<span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <input type="file" class="dropify" required name="image" />

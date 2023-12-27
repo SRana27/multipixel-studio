@@ -21,6 +21,7 @@ class Comment extends Model
         }
 
         self::$comment->name = $request->name;
+        self::$comment->ratting = $request->ratting;
         self::$comment->description = $request->description;
         if ($request->image) {
             if (file_exists(self::$comment->image)) {

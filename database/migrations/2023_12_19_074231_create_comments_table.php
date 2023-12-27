@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('description');
+            $table->integer('ratting');
             $table->text('image');
             $table->tinyInteger('status')->default('1');
             $table->timestamps();

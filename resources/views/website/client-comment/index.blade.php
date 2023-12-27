@@ -40,11 +40,9 @@
                         <div class="ms-4">
                             <h4 class="">{{$comment->name}}</h4>
                             <div class="d-flex pe-5 ">
+                                @for($i=1;$i<=$comment->ratting;$i++)
                                 <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                                <i class="fas fa-star me-1 "></i>
-                               <i class="fas fa-star-half-alt me-1"></i>
+                               @endfor
                             </div>
                         </div>
                     </div>
