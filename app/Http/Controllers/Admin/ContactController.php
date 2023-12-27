@@ -22,4 +22,10 @@ class ContactController extends Controller
         ]);
     }
 
+    public function statusMessage($message_id)
+    {
+        Contact::updateStatus($message_id);
+        return back();
+    }
+
 }

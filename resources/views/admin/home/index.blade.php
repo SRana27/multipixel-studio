@@ -18,10 +18,12 @@
                             <div class="d-flex no-block align-items-center">
                                 <div>
                                     <h3><i class="bi bi-chat-right"></i></h3>
-                                    <p class="text-muted">CLIENTS MESSAGE</p>
+                                    <p class="text-muted"><a href="{{route('client.message')}}">NEW MESSAGE</a> </p>
                                 </div>
                                 <div class="ms-auto">
-                                    <h2 class="counter text-primary">23</h2>
+                                    <h2 class="counter text-primary">
+                                    @php($i=count($messages))
+                                       {{$i}}</h2>
                                 </div>
                             </div>
                         </div>
@@ -46,7 +48,8 @@
                                     <p class="text-muted">TOTAL SERVICE</p>
                                 </div>
                                 <div class="ms-auto">
-                                    <h2 class="counter text-cyan">6</h2>
+                                    <h2 class="counter text-cyan">@php($z=count($active_services))
+                                        {{$z}}</h2>
                                 </div>
                             </div>
                         </div>

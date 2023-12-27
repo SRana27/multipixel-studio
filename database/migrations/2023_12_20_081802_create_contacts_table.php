@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('subject');
             $table->text('message');
+            $table->tinyInteger('status')->default(0);
             $table->timestamps();
         });
     }

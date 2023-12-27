@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 class Contact extends Model
 {
     use HasFactory;
-   public static $message;
+   public static $message,$status;
 
 
     public static function storeMessage($request)
@@ -35,6 +35,18 @@ class Contact extends Model
         self::$message = Contact::find($request->message_id);
 
         self::$message->delete();
+    }
+
+    public static function updateStatus($message_id)
+    {
+        self::$status = Contact::find($message_id);
+        if (self::$status->status == 0) {
+            self::$status->status = 1;
+
+        } else {
+            self::$status->status = 0;
+        }
+        self::$status->save();
     }
 
 }

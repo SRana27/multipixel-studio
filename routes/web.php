@@ -43,7 +43,7 @@ Route::post('/form',[ContactController::class,'contactForm'])->name('save.messag
     {
         Route::get('/dashboard',[AdminController::class,'dashboard'])->name('dashboard');
         Route::get('/messages',[ContactController::class,'contactMessage'])->name('client.message');
-//        Route::get('/message/{message_id}',[ContactController::class,'detailMessage'])->name('view.message');
+        Route::get('/message/{message_id}',[ContactController::class,'statusMessage'])->name('view.message');
 
 
 

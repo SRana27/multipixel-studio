@@ -39,7 +39,7 @@
         <ul class="navbar-nav my-lg-0">
 
             <li class="nav-item dropdown u-pro">
-                <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{asset('/')}}admin/assets/images/users/admin.jpg" alt="user" class="">@foreach($user as $users) <span class="hidden-md-down">{{$users->name}}&nbsp;<i class="ti-angle-down"></i></span> @endforeach </a>
+                <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{asset('/')}}admin/assets/images/users/admin.jpg" alt="user" class=""> <span class="hidden-md-down"> {{ Auth::user()->name }}&nbsp;<i class="ti-angle-down"></i></span>  </a>
                 <div class="dropdown-menu dropdown-menu-end animated flipInY">
                     <a href="{{ route('profile.show') }}" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
                     <a href="" class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logoutForm').submit()"><i class="ti-power-off"></i> Logout</a>
