@@ -128,7 +128,7 @@
                                     </div>
                                     <h3 class="mb-3 pt-2 text-white ">{{$service->service_name}}</h3>
                                     <p class="mb-4 text-white" style=" display: -webkit-box;-webkit-line-clamp:4;-webkit-box-orient: vertical; overflow: hidden; height: 100px;text-align: justify;font-family:Roboto;font-size: 18px">{{$service->description}}.</p>
-                                    <a href="" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
+                                    <a href="{{route('detail.service',['service_id'=>$service->id])}}" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                                 </div>
                             </div>
                         </div>

@@ -23,16 +23,16 @@
     })
 
 </script>
-<script>
-    const activePage=window.location.href;
-    console.log(`${activePage}`);
-    const dropdown =document.querySelectorAll('.dropdown-item').
-    forEach(link => {
-        if(link.href.includes(`${activePage}`)){
-            link.classList.add('active').siblings().removeClass('active');
-        }
-    })
-    </script>
+{{--<script>--}}
+{{--    const activePage=window.location.href;--}}
+{{--    console.log(`${activePage}`);--}}
+{{--    const dropdown =document.querySelectorAll('.dropdown-item').--}}
+{{--    forEach(link => {--}}
+{{--        if(link.href.includes(`${activePage}`)){--}}
+{{--            link.classList.add('active').siblings().removeClass('active');--}}
+{{--        }--}}
+{{--    })--}}
+{{--</script>--}}
 <script>
     $('#submit').click(function () {
       var name=$('#name').val();

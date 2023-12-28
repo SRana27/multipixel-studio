@@ -51,5 +51,11 @@ class ServiceController extends Controller
         return redirect('/manage-service')->with('message','Service delete successfully');
     }
 
+    public function detail($service_id)
+    {
+        return view('website.service.detail_service',[
+            'detail_service'=>Service::find($service_id)
+        ]);
+    }
 
 }

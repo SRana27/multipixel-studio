@@ -36,6 +36,7 @@ Route::get('/blog',[WebsiteController::class,'blog'])->name('blog');
 Route::get('/team',[WebsiteController::class,'team'])->name('team');
 Route::get('/client-comment',[WebsiteController::class,'comment'])->name('comment');
 Route::post('/form',[ContactController::class,'contactForm'])->name('save.message');
+Route::get('/service_detail/{service_id}',[ServiceController::class,'detail'])->name('detail.service');
 
 
 
