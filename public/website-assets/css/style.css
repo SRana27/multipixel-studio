@@ -364,7 +364,6 @@ color: #9205ba;
     .carousel-item {
         min-height: 400px;
     }
-
     .carousel-item img {
         min-height: 400px;
         object-fit: cover;
@@ -412,6 +411,19 @@ color: #9205ba;
 
 /*** Carousel End ***/
 
+
+/*** about ***/
+
+.about-description{
+    font-family: Roboto;
+    font-size:20px;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp:6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/*** end about ***/
 
 /*** Services Start ***/
 .bg-service {
@@ -528,9 +540,12 @@ color: #9205ba;
 
 .project-content a {
     display: inline-block;
-    padding: 20px 25px;
-    background: #17112e;
+    padding: 25px;
+    text-align: center;
+    background-color: #2d1445;
     border-radius: 10px;
+    min-width: 150px;
+
 }
 
 .project-item:hover .project-content {
@@ -550,11 +565,15 @@ color: #9205ba;
 .blog-item .blog-btn {
     z-index: 2;
 }
-.blog-description{
+.description{
     padding-top: 10px;
     font-family: Roboto;
     font-size:18px;
-    text-align: justify
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
 }
 .blog-btn .blog-btn-icon {

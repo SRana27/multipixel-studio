@@ -40,9 +40,9 @@
                         <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">{{$blog->blog_type}}</span>
                         <div class="blog-content  text-center position-relative px-3" style="margin-top: 20px;">
                             <span class="text-multipixel">Date: {{$blog->date}}</span>
-                            <p class="blog-description text-multipixel">{{$blog->description}}</p>
+                            <p class="description text-multipixel">{{$blog->description}}</p>
                             <div class=" text-center ">
-                                <a href="#" class="btn bg-multipixeldeep text-white  px-4 py-2 mb-2 rounded-pill">Read More</a>
+                                <a href="{{route('detail.blog',['blog_id'=>$blog->id])}}" class="btn bg-multipixeldeep text-white  px-4 py-2 mb-2 rounded-pill">Read More</a>
                             </div>
                         </div>
                     </div>

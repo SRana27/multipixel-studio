@@ -38,9 +38,8 @@ Completed Project
                         <div class="project-img">
                             <img src="{{asset('/')}}website-assets/img/project-1.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
-                                <a href="#" class="text-center">
-                                    <h4 class="text-secondary">Web design</h4>
-                                    <p class="m-0 text-white">Web Analysis</p>
+                                <a href="">
+                                    <p class="m-0 text-white">Video</p>
                                 </a>
                             </div>
                         </div>

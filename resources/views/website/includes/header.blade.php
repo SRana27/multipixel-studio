@@ -16,7 +16,7 @@
             <div class="top-link">
                 <a href="" title="discord" class=" nav-fill btn btn-sm-square rounded-circle"><i class="bi bi-discord text-multipixel"></i></a>
                 <a href="" class=" nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-multipixel"></i></a>
-                <a href="" class=" nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-multipixel"></i></a>
+                <a href="" class=" nav-fill btn btn-sm-square rounded-circle"><i class="fas fa-envelope text-multipixel"></i></a>
                 <a href="" class=" nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-multipixel"></i></a>
             </div>
         </div>

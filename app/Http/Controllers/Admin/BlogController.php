@@ -42,4 +42,12 @@ class BlogController extends Controller
         return redirect('/manage-blog')->with('message','Blog information delete successfully');
 
     }
+    public function detailBlog($blog_id)
+
+    {
+         return view('website.blog.detail_blog',[
+             'blog'=>Blog::find($blog_id)
+         ]);
+
+    }
 }

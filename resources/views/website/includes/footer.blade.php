@@ -10,7 +10,7 @@
                 <div class="d-flex hightech-link">
                     <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="bi bi-discord text-multipixel"></i></a>
                     <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-multipixel"></i></a>
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-multipixel"></i></a>
+                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fas fa-envelope text-multipixel"></i></a>
                     <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-multipixel"></i></a>
                 </div>
             </div>

@@ -37,7 +37,8 @@ Route::get('/team',[WebsiteController::class,'team'])->name('team');
 Route::get('/client-comment',[WebsiteController::class,'comment'])->name('comment');
 Route::post('/form',[ContactController::class,'contactForm'])->name('save.message');
 Route::get('/service_detail/{service_id}',[ServiceController::class,'detail'])->name('detail.service');
-
+Route::get('/video',[ServiceController::class,'video'])->name('video');
+Route::get('/blog-detail/{blog_id}',[BlogController::class,'detailBlog'])->name('detail.blog');
 
 
     Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',])->group(function ()

@@ -19,6 +19,7 @@
         </div>
         <!-- Page Header End -->
 
+
         <!-- About Start -->
         <div class="container-fluid py-5 my-5">
             <div class="container pt-5">
@@ -36,14 +37,12 @@
                             <h3 class="text-white">{{$about->section_name}}</h3>
                             <h1 class="mb-4 ">{{$about->title}}</h1>
                             <p  style="font-family:Roboto;text-align: justify " >{{$about->description}}</p>
-                            <a href="" class="btn bg-multipixeldeep rounded-pill px-4 py-3 text-white" style="font-family:Poppins">More Details</a>
                         </div>
                     </div>
                 @endforeach
             </div>
         </div>
         <!-- About End -->
-
         <div class="container-fluid py-5 mb-5 team">
             <div class="container">
                 @foreach($sections as $section)
@@ -67,7 +66,7 @@
                                         <p class="m-0 text-multipixeldeep">{{$member->designation}}</p>
                                     </div>
                                     <div class="text-center pb-4">
-                                        <h4 >MULTIPIXEL STUDIO </h4>
+                                        <h4>MULTIPIXEL STUDIO </h4>
                                     </div>
                                 </div>
                             </div>

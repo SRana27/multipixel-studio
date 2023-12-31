@@ -97,8 +97,8 @@
                 <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
                     <h3 class="text-white">{{$about->section_name}}</h3>
                     <h1 class="mb-4 ">{{$about->title}}</h1>
-                    <p  style="font-family:Roboto;text-align: justify " >{{$about->description}}</p>
-                    <a href="" class="btn bg-multipixeldeep rounded-pill px-4 py-3 text-white" style="font-family:Poppins">More Details</a>
+                    <p  class="about-description" >{{$about->description}}</p>
+                    <a href="{{route('about')}}" class="btn bg-multipixeldeep rounded-pill px-4 py-3 text-white" style="font-family:Poppins">More Details</a>
                 </div>
             </div>
             @endforeach
@@ -127,7 +127,7 @@
                                         <img src="{{asset($service->image)}}" height="200px" width="100%" class="rounded" alt="service pic">
                                     </div>
                                     <h3 class="mb-3 pt-2 text-white ">{{$service->service_name}}</h3>
-                                    <p class="mb-4 text-white" style=" display: -webkit-box;-webkit-line-clamp:4;-webkit-box-orient: vertical; overflow: hidden; height: 100px;text-align: justify;font-family:Roboto;font-size: 18px">{{$service->description}}.</p>
+                                    <p class="mb-4 text-white description" >{{$service->description}}.</p>
                                     <a href="{{route('detail.service',['service_id'=>$service->id])}}" class="btn bg-multipixeldeep text-white px-5 py-3 rounded-pill">Read More</a>
                                 </div>
                             </div>
@@ -326,9 +326,9 @@
                             <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">{{$blog->blog_type}}</span>
                             <div class="blog-content  text-center position-relative px-3" style="margin-top: 20px;">
                                 <span class="text-multipixel">Date: {{$blog->date}}</span>
-                                <p class="blog-description text-multipixel">{{$blog->description}}</p>
+                                <p class="description text-multipixel">{{$blog->description}}</p>
                                 <div class=" text-center ">
-                                    <a href="#" class="btn bg-multipixeldeep text-white  px-4 py-2 mb-2 rounded-pill">Read More</a>
+                                    <a href="{{route('detail.blog',['blog_id'=>$blog->id])}}" class="btn bg-multipixeldeep text-white  px-4 py-2 mb-2 rounded-pill">Read More</a>
                                 </div>
                             </div>
                         </div>
