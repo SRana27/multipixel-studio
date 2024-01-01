@@ -36,7 +36,7 @@
 
                                     <td class="pt-5">{{$i++}}</td>
                                     <td  class="pt-5">{{$blog->blog_type}}</td>
-                                    <td  class="pt-5" style=" display: -webkit-box; -webkit-box-orient: vertical; overflow-y: scroll; height:50px; width:300px;text-align: justify">{{$blog->description}}</td>
+                                    <td  class="pt-5" style=" display: -webkit-box; -webkit-box-orient: vertical; overflow-y: scroll; height:50px;text-align: justify">{{$blog->description}}</td>
                                     <td><img src="{{asset($blog->image)}}" alt="{{$blog->name}}" height="80px" width="80px"></td>
                                     <td  class="pt-5">{{$blog->date}}</td>
                                     <td class="d-flex justify-content-center">

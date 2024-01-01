@@ -37,7 +37,7 @@
                 <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".4s">
                     <div class="blog-item position-relative bg-light rounded">
                         <img src="{{asset($blog->image)}}" class=" w-100 rounded-top" alt="" height="300px">
-                        <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;">{{$blog->blog_type}}</span>
+                        <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;font-family:'Segoe UI Light'">{{$blog->blog_type}}</span>
                         <div class="blog-content  text-center position-relative px-3" style="margin-top: 20px;">
                             <span class="text-multipixel">Date: {{$blog->date}}</span>
                             <p class="description text-multipixel">{{$blog->description}}</p>

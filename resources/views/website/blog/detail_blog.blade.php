@@ -1,6 +1,6 @@
 @extends('website.master')
 @section('title')
-Blog-detail
+Blog details
 @endsection
 
 @section('body')
@@ -9,9 +9,9 @@ Blog-detail
             <div class="detail-blog">
                 <img src="{{asset($blog->image)}}" class="card-img-top pb-2" alt="..." style="max-width:500px;max-height:320px;float:left;border-radius: 10px;margin-right: 15px;">
                 <div class="text-box pb-5">
-                    <h1 class="text-multipixel text-center "> Blog Type: {{$blog->blog_type}}</h1>
-                    <h4 class="text-warning text-center ">Date: {{$blog->date}}</h4>
-                    <p style="text-align: justify;font-family: 'Roboto Thin';padding-top: 20px">{{$blog->description}}
+                    <h1 class="text-multipixel text-center"> Blog Type: {{$blog->blog_type}}</h1>
+                    <h4 class="text-warning text-center">Date: {{$blog->date}}</h4>
+                    <p class="detail-description pt-4">{{$blog->description}}
                 </div>
             </div>
         </div>

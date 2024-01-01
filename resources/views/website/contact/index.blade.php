@@ -5,32 +5,23 @@
 
 @section('body')
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5">
+    <div class="container-fluid contact-page-header py-5" style="min-height: 350px">
         <div class="container text-center py-5">
-            <h1 class="display-2 text-multipixeldeep mb-4 animated slideInDown">Contact Us</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item" aria-current="page">Contact</li>
-                </ol>
-            </nav>
+            <h1 class="display-2 text-multipixeldeep mb-4 animated slideInDown">Contact</h1>
+
         </div>
     </div>
+
     <!-- Page Header End -->
 
     <!-- Contact Start -->
     <div class="container-fluid py-5 mb-5">
         <div class="container">
-            @foreach($sections as $section)
-                @if($section->section_name=='contact')
-                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                        <h3 class="text-white">{{$section->section_title}}</h3>
-                        <h1>{{$section->section_tag}}</h1>
-                    </div>
-                @endif
-            @endforeach
-            <div class="contact-detail position-relative p-5">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h3 class="text-white">Get In Touch</h3>
+                <h1 class="mb-3">Contact for any query</h1>
+            </div>
+            <div class="contact-detail position-relative p-3">
                 <div class="row g-5 justify-content-center">
                     <div class="col-xl-4 col-lg-6 wow fadeIn " data-wow-delay=".3s">
                         <div class="d-flex  p-2 rounded">
@@ -69,13 +60,13 @@
                     </div>
                 </div>
                 <div class="row g-5 mt-5">
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
-                        <div class="p-5 h-100 rounded contact-map">
+                    <div class="col-lg-6  wow fadeIn" data-wow-delay=".3s">
+                        <div class="h-100 rounded contact-map">
                             <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4710403339755!2d-73.82241512404069!3d40.685622471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1686493221834!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                        <div class="p-5 rounded contact-form " style="font-family: Roboto">
+                    <div class="col-lg-6 col-sm-12  wow fadeIn" data-wow-delay=".5s">
+                        <div class=" rounded contact-form" style="font-family: Roboto">
                             <form action="{{route('save.message')}}" method="post">
                                 @csrf
                                 <div class="mb-4 ">

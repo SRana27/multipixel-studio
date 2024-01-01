@@ -4,9 +4,9 @@
         <div class="row g-5">
             <div class="col-lg-5 col-md-6 col-sm-12">
                 <a href="{{route('home')}}">
-                    <h1 class="text-white fw-bold d-block">Multipixel<span class="text-multipixel">Studio</span> </h1>
+                    <h1 class="text-white fw-bold d-block">Multipixel<span class="text-multipixel"> Studio</span> </h1>
                 </a>
-                <p class="mt-3 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui placeat inventore consectetur repellendus optio debitis. Soluta facere delectus qui placeat inventore consectetur repellendus </p>
+                <p class="mt-3 text-light" style="text-align: justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui placeat inventore consectetur repellendus optio debitis. Soluta facere delectus qui placeat inventore consectetur repellendus </p>
                 <div class="d-flex hightech-link">
                     <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="bi bi-discord text-multipixel"></i></a>
                     <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-multipixel"></i></a>

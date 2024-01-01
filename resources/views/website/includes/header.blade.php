@@ -5,14 +5,14 @@
 <!-- Spinner End -->
 
 <!-- Topbar Start -->
-<div class="container-fluid header-text py-2 d-none d-md-flex">
+<div class="container-fluid header-text py-1 d-none d-md-flex">
     <div class="container">
         <div class="d-flex justify-content-between topbar">
-            <div class="top-info">
+            <div class="top-info" style="font-family:'Roboto Thin';font-size: 15px">
                 <small class="me-3 text-white"><a href="#"><i class="fas fa-map-marker-alt me-2 text-multipixel"></i></a>23 Ranking Street, New York</small>
                 <small class="me-3 text-white"><a href="#"><i class="fas fa-envelope me-2 text-multipixel"></i></a>Email@Example.com</small>
             </div>
-            <div id="note" class="text-white d-none d-xl-flex"><small>Note : We help you to Grow your Business</small></div>
+            <div id="note" class="text-white d-none d-xl-flex"><small> We help you to Grow your Business</small></div>
             <div class="top-link">
                 <a href="" title="discord" class=" nav-fill btn btn-sm-square rounded-circle"><i class="bi bi-discord text-multipixel"></i></a>
                 <a href="" class=" nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-multipixel"></i></a>
@@ -60,7 +60,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="d-flex flex-column pe-4 border-end">
+                <div class="d-flex flex-column pe-4 border-end"style="font-family:'Roboto Thin';font-size: 14px">
                     <span class="text-white">Have any questions?</span>
                     <span class="text-white">Call: + 0123 456 7890</span>
                 </div>

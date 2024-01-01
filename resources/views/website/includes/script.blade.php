@@ -35,10 +35,10 @@
 {{--</script>--}}
 <script>
     $('#submit').click(function () {
-      var name=$('#name').val();
-      var email=$('#email').val()
-        var subject=$('#subject').val()
-        var message=$('#message').val()
+        let name=$('#name').val();
+        let email=$('#email').val()
+        let subject=$('#subject').val()
+        let message=$('#message').val()
 
         function IsEmail(email) {
             const regex = /([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;

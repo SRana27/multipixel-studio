@@ -408,6 +408,14 @@ color: #9205ba;
     font-size: 20px;
   color: #500d6d;
 }
+.contact-page-header {
+
+    background: linear-gradient(rgba(236, 221, 238, .9), rgba(100, 80, 113,.9)), url(../img/c_contact.jpeg) center center no-repeat;
+
+}
+
+
+
 
 /*** Carousel End ***/
 
@@ -576,6 +584,12 @@ color: #9205ba;
     overflow: hidden;
 
 }
+.detail-description {
+    text-align: justify;
+    font-family:"Segoe UI Light";
+    font-size: 18px;
+}
+
 .blog-btn .blog-btn-icon {
     height: 50px;
     position: relative;
@@ -716,6 +730,15 @@ color: #9205ba;
 
 /*** Testimonial Start ***/
 
+.client-comment{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow-y: scroll;
+    height: 140px;
+    text-align: justify;
+    font-family:"summernote";
+    font-size: 18px;
+}
 .testimonial-item {
     background: rgba(136, 94, 198, 0.3);
     color:white ;
