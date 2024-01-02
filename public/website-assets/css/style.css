@@ -1,9 +1,12 @@
 /*** Spinner Start ***/
 .bg-multipixel{
-    background: #82219da3;
+    background: rgba(130, 33, 157, 0.64);
 }
 .bg-multipixeldark{
     background: #17112e;
+}
+.bg-multipixel-nav{
+    background: #720b9e;
 }
 .bg-multipixeldeep{
     background: #6420a3;
@@ -30,7 +33,7 @@ color: #9205ba;
      opacity: 1;
  }
  .header-text{
- background-color: #080808 !important
+ background-color: #17112e !important
  }
 
 
@@ -99,13 +102,17 @@ color: #9205ba;
 }
 
 .topbar .top-link a {
+
     margin-right: 10px;
-    background: white;
+    background: gray;
+
+
 }
 
-.topbar .top-link a:hover{
- background: grey;
+.topbar .top-link a i:hover{
     border: 0;
+    color: white;
+
 }
 #note {
     width: 500px;
@@ -142,7 +149,7 @@ color: #9205ba;
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: #ef58c2  !important;
+    color: rgba(218, 80, 250, 0.84) !important;
 }
 .nav {
     display: flex;
@@ -410,7 +417,7 @@ color: #9205ba;
 }
 .contact-page-header {
 
-    background: linear-gradient(rgba(236, 221, 238, .9), rgba(100, 80, 113,.9)), url(../img/c_contact.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(236, 221, 238, .9), rgba(100, 80, 113,.7)), url(../img/c_contact.jpeg) center center no-repeat;
 
 }
 
@@ -423,8 +430,9 @@ color: #9205ba;
 /*** about ***/
 
 .about-description{
-    font-family: Roboto;
-    font-size:20px;
+    font-family: "Segoe UI";
+    padding-top: 25px;
+    font-size:17px;
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp:6;

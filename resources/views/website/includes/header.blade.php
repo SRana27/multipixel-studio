@@ -5,7 +5,7 @@
 <!-- Spinner End -->
 
 <!-- Topbar Start -->
-<div class="container-fluid header-text py-1 d-none d-md-flex">
+<div class="container-fluid header-text py-1 d-none d-md-flex ">
     <div class="container">
         <div class="d-flex justify-content-between topbar">
             <div class="top-info" style="font-family:'Roboto Thin';font-size: 15px">
@@ -15,9 +15,9 @@
             <div id="note" class="text-white d-none d-xl-flex"><small> We help you to Grow your Business</small></div>
             <div class="top-link">
                 <a href="" title="discord" class=" nav-fill btn btn-sm-square rounded-circle"><i class="bi bi-discord text-multipixel"></i></a>
-                <a href="" class=" nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-multipixel"></i></a>
-                <a href="" class=" nav-fill btn btn-sm-square rounded-circle"><i class="fas fa-envelope text-multipixel"></i></a>
-                <a href="" class=" nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-multipixel"></i></a>
+                <a href=""  title="facebook" class=" nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-multipixel"></i></a>
+                <a href=""  title="email"  class=" nav-fill btn btn-sm-square rounded-circle"><i class="fas fa-envelope text-multipixel"></i></a>
+                <a href="" title="linkedIn" class=" nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-multipixel"></i></a>
             </div>
         </div>
     </div>
@@ -25,7 +25,7 @@
 <!-- Topbar End -->
 
 <!-- Navbar Start -->
-<div class="container-fluid bg-multipixel">
+<div class="container-fluid bg-multipixel-nav sticky-lg-top">
     <div class="container ">
         <nav class="navbar  navbar-expand-lg py-0 ">
             <a href="{{route('home')}}" class="navbar-brand">

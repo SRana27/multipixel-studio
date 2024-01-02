@@ -7,8 +7,7 @@
     <!-- Page Header Start -->
     <div class="container-fluid contact-page-header py-5" style="min-height: 350px">
         <div class="container text-center py-5">
-            <h1 class="display-2 text-multipixeldeep mb-4 animated slideInDown">Contact</h1>
-
+{{--            <h1 class="display-2 text-multipixeldeep mb-4 animated slideInDown">Contact</h1>--}}
         </div>
     </div>
 

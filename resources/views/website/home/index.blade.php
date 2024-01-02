@@ -30,7 +30,7 @@
                             @endif
                             <h1 class="text-white display-1 mb-4 animated fadeInRight">{{$carousel->title}}</h1>
                             <p class="mb-4 text-white fs-5 animated fadeInDown">{{$carousel->description}}</p>
-                            <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn bg-multipixeldeep rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
+{{--                            <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn bg-multipixeldeep rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>--}}
                             <a href="{{route('contact')}}" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn bg-multipixeldeep rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
     </div>
     <!-- Carousel End -->
     <!-- Fact Start -->
-    <div class="container-fluid text-multipixeldeep py-5">
+    <div class="container-fluid text-multipixeldeep py-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
@@ -67,7 +67,7 @@
                 <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
                     <div class="d-flex counter">
                         <h1 class="me-3 text-multipixel counter-value">120</h1>
-                        <h5 class="text-white mt-1">Total clients who love HighTech</h5>
+                        <h5 class="text-white mt-1">Total clients who love Munltipixel-studio</h5>
                     </div>
                 </div>
                 <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
