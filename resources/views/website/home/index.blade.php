@@ -28,10 +28,10 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-lebel="close"></button>
                                 </div>
                             @endif
-                            <h1 class="text-white display-1 mb-4 animated fadeInRight">{{$carousel->title}}</h1>
+                            <h3 class="text-white display-1 mb-3 animated fadeInRight">{{$carousel->title}}</h3>
                             <p class="mb-4 text-white fs-5 animated fadeInDown">{{$carousel->description}}</p>
 {{--                            <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn bg-multipixeldeep rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>--}}
-                            <a href="{{route('contact')}}" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn bg-multipixeldeep rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
+                            <a href="{{route('contact')}}" class="ms-2 "><button type="button" class="py-sm-2 px-sm-4 btn bg-multipixeldeep rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
                         </div>
                     </div>
                 </div>

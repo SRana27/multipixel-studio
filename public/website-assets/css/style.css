@@ -352,12 +352,12 @@ color: #9205ba;
         object-fit: cover;
     }
 
-    .carousel-item h1 {
+    .carousel-item h3 {
         font-size: 28px !important;
     }
 
     .carousel-item p {
-        font-size: 14px !important;
+        font-size: 15px !important;
     }
     .carousel-caption .carousel-content a button.carousel-content-btn1{
         font-size: 12px;
