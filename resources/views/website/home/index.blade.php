@@ -321,7 +321,7 @@
             <div class="row g-5 justify-content-center">
                 @php($i=.0)
                 @foreach($blogs as $blog)
-                    <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="{{$i=$i+.3}}s">
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="{{$i=$i+.3}}s">
                         <div class="blog-item position-relative bg-light rounded">
                             <img src="{{asset($blog->image)}}" class=" w-100 rounded-top" alt="" height="300px">
                             <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;font-family:'Segoe UI Light'">{{$blog->blog_type}}</span>
