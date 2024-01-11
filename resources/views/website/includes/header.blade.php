@@ -12,7 +12,7 @@
                 <small class="me-3 text-white"><a href="#"><i class="fas fa-map-marker-alt me-2 text-multipixel"></i></a>23 Ranking Street, New York</small>
                 <small class="me-3 text-white"><a href="#"><i class="fas fa-envelope me-2 text-multipixel"></i></a>Email@Example.com</small>
             </div>
-            <div id="note" class="text-white d-none d-xl-flex pt-2"><small> We help you to Grow your Business</small></div>
+            <div id="note" class="text-white d-none d-xl-flex pt-1"><small> We help you to Grow your Business</small></div>
             <div class="top-link">
                 <a href="" title="discord" class=" nav-fill btn btn-sm-square rounded-circle"><i class="bi bi-discord text-multipixel"></i></a>
                 <a href=""  title="facebook" class=" nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-multipixel"></i></a>
