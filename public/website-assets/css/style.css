@@ -402,7 +402,7 @@ color: #9205ba;
 }
 
 .page-header {
-    background: linear-gradient(rgba(236, 221, 238, .7), rgba(100, 80, 113, 0.9)), url(../img/logo.png) center center no-repeat;
+    background: linear-gradient(rgba(236, 221, 238, .7), rgba(182, 178, 186, 0.9)), url(../img/logo.png) center center no-repeat;
     background-size: cover;
 }
 

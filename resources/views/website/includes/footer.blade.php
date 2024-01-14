@@ -8,10 +8,10 @@
                 </a>
                 <p class="mt-3 text-light" style="text-align: justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui placeat inventore consectetur repellendus optio debitis. Soluta facere delectus qui placeat inventore consectetur repellendus </p>
                 <div class="d-flex hightech-link">
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="bi bi-discord text-multipixel"></i></a>
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-multipixel"></i></a>
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-multipixel"></i></a>
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-multipixel"></i></a>
+                    <a href="https://discord.gg/p4uZfP7sRx" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="bi bi-discord text-multipixel"></i></a>
+                    <a href="https://www.facebook.com/multipixelstudiousa" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-multipixel"></i></a>
+                    <a href="https://www.linkedin.com/company/multipixelstudio?trk=public_jobs_topcard-org-name" class="btn-light nav-fill btn btn-square rounded-circle me-2 "><i class="fab fa-linkedin-in text-multipixel"></i></a>
+                    <a href="https://www.instagram.com/multipixelstudio/?igsh=MTJidGFqbXN0M2dtZA%3D%3D" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-instagram text-multipixel"></i></a>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6">

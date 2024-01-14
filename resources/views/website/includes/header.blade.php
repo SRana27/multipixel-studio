@@ -14,10 +14,10 @@
             </div>
             <div id="note" class="text-white d-none d-xl-flex pt-1"><small> We help you to Grow your Business</small></div>
             <div class="top-link">
-                <a href="" title="discord" class=" nav-fill btn btn-sm-square rounded-circle"><i class="bi bi-discord text-multipixel"></i></a>
-                <a href=""  title="facebook" class=" nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-multipixel"></i></a>
-                <a href="" title="linkedIn" class=" nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-linkedin-in text-multipixel"></i></a>
-                <a href=""  title="instagram"  class=" nav-fill btn btn-sm-square rounded-circle  me-0"><i class="fab fa-instagram text-multipixel"></i></a>
+                <a href="https://discord.gg/p4uZfP7sRx" title="discord" class=" nav-fill btn btn-sm-square rounded-circle"><i class="bi bi-discord text-multipixel"></i></a>
+                <a href="https://www.facebook.com/multipixelstudiousa"  title="facebook" class=" nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-multipixel"></i></a>
+                <a href="https://www.linkedin.com/company/multipixelstudio?trk=public_jobs_topcard-org-name" title="linkedIn" class=" nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-linkedin-in text-multipixel"></i></a>
+                <a href="https://www.instagram.com/multipixelstudio/?igsh=MTJidGFqbXN0M2dtZA%3D%3D"  title="instagram"  class=" nav-fill btn btn-sm-square rounded-circle  me-0"><i class="fab fa-instagram text-multipixel"></i></a>
 
             </div>
         </div>
