@@ -57,26 +57,27 @@ Completed Project
         <div class="container">
             @foreach($sections as $section)
                 @if($section->section_name=='project')
-                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <div class="text-center mx-auto pb-5 wow fadeInRight" data-wow-delay=".3s" style="max-width: 600px;">
                         <h3 class="text-white">{{$section->section_title}}</h3>
                         <h1>{{$section->section_tag}}</h1>
                     </div>
                 @endif
             @endforeach
             <div class="row g-5">
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-img">
                             <img src="{{asset('/')}}website-assets/img/project-1.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
-                                <a href="">
-                                    <p class="m-0 text-white">Video</p>
+                                <a href="#" class="text-center">
+                                    <h4 class="text-secondary">Web design</h4>
+                                    <p class="m-0 text-white">Web Analysis</p>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay=".5s">
                     <div class="project-item">
                         <div class="project-img">
                             <img src="{{asset('/')}}website-assets/img/project-2.jpg" class="img-fluid w-100 rounded" alt="">
@@ -89,7 +90,7 @@ Completed Project
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay=".7s">
                     <div class="project-item">
                         <div class="project-img">
                             <img src="{{asset('/')}}website-assets/img/project-3.jpg" class="img-fluid w-100 rounded" alt="">
@@ -102,7 +103,7 @@ Completed Project
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-img">
                             <img src="{{asset('/')}}website-assets/img/project-4.jpg" class="img-fluid w-100 rounded" alt="">
@@ -115,7 +116,7 @@ Completed Project
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay=".5s">
                     <div class="project-item">
                         <div class="project-img">
                             <img src="{{asset('/')}}website-assets/img/project-5.jpg" class="img-fluid w-100 rounded" alt="">
@@ -128,7 +129,7 @@ Completed Project
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay=".7s">
                     <div class="project-item">
                         <div class="project-img">
                             <img src="{{asset('/')}}website-assets/img/project-6.jpg" class="img-fluid w-100 rounded" alt="">

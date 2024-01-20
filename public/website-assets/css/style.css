@@ -418,11 +418,17 @@ color: #9205ba;
 .contact-page-header {
 
     background: linear-gradient(rgba(236, 221, 238, .9), rgba(100, 80, 113,.7)), url(../img/c_contact.jpeg) center center no-repeat;
-
+    background-size: cover;
 }
 
 
+.about-page-header {
 
+    background: linear-gradient(rgba(236, 221, 238, .9), rgba(100, 80, 113,.7)), url(../img/service.jpg) center center no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    color: #500d6d;
+}
 
 /*** Carousel End ***/
 

@@ -14,10 +14,10 @@
                 <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
                 <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
             </ol>
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner " role="listbox">
                 @foreach($carousels as $key=>$carousel)
                 <div class="carousel-item {{$key== 0 ? 'active':''}}">
-                    <img src="{{asset($carousel->image)}}" class="img-fluid" alt="First slide">
+                    <img src="{{asset($carousel->image)}}" class="img-fluid " alt="First slide">
                     <div class="carousel-caption">
 
                         <div class="container carousel-content">
@@ -29,9 +29,8 @@
                                 </div>
                             @endif
                             <h3 class="text-white display-1 mb-3 animated fadeInRight">{{$carousel->title}}</h3>
-                            <p class="mb-4 text-white fs-5 animated fadeInDown">{{$carousel->description}}</p>
-{{--                            <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn bg-multipixeldeep rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>--}}
-                            <a href="{{route('contact')}}" class="ms-2 "><button type="button" class="py-sm-2 px-sm-4 btn bg-multipixeldeep rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
+                            <p class="mb-4 text-white fs-5 animated fadeInLeft">{{$carousel->description}}</p>
+                            <a href="{{route('contact')}}" class="ms-2 "><button type="button" class="py-sm-2 px-sm-4 btn bg-multipixeldeep rounded-pill carousel-content-btn2 animated zoomIn">Contact Us</button></a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +84,7 @@
         <div class="container pt-5">
             @foreach($abouts as $about)
             <div class="row g-5">
-                <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                <div class="col-lg-5 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay=".3s">
                     <div class="h-100 position-relative">
                         <img src="{{asset($about->image_top)}}" class="img-fluid w-75 rounded" alt="image_top" style="margin-bottom: 25%;">
                         <div class="position-absolute w-75" style="top: 25%; left: 25%;">
@@ -93,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                <div class="col-lg-7 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay=".5s">
                     <h3 class="text-white">{{$about->section_name}}</h3>
                     <h1 class="mb-4 ">{{$about->title}}</h1>
                     <p  class="about-description" >{{$about->description}}</p>
@@ -110,7 +109,7 @@
         <div class="container">
             @foreach($sections as $section)
                 @if($section->section_name=='service')
-                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <div class="text-center mx-auto pb-5 wow fadeInLeft " data-wow-delay=".3s" style="max-width: 600px;">
                         <h3 class="text-white">{{$section->section_title}}</h3>
                         <h1>{{$section->section_tag}}</h1>
                     </div>
@@ -119,7 +118,7 @@
             <div class="row g-5 services-inner">
                 @php($i=.0)
                 @foreach($services as $service)
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="{{$i=$i+.3}}s">
+                    <div class="col-md-6 col-lg-4 wow zoomIn " data-wow-delay="{{$i=$i+.2}}s">
                         <div class="services-item bg-service">
                             <div class="p-4 text-center services-content">
                                 <div class="services-content-icon">
@@ -146,14 +145,14 @@
         <div class="container">
             @foreach($sections as $section)
                 @if($section->section_name=='project')
-                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <div class="text-center mx-auto pb-5 wow fadeInRight" data-wow-delay=".3s" style="max-width: 600px;">
                         <h3 class="text-white">{{$section->section_title}}</h3>
                         <h1>{{$section->section_tag}}</h1>
                     </div>
                 @endif
             @endforeach
             <div class="row g-5">
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-img">
                             <img src="{{asset('/')}}website-assets/img/project-1.jpg" class="img-fluid w-100 rounded" alt="">
@@ -166,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay=".5s">
                     <div class="project-item">
                         <div class="project-img">
                             <img src="{{asset('/')}}website-assets/img/project-2.jpg" class="img-fluid w-100 rounded" alt="">
@@ -179,7 +178,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay=".7s">
                     <div class="project-item">
                         <div class="project-img">
                             <img src="{{asset('/')}}website-assets/img/project-3.jpg" class="img-fluid w-100 rounded" alt="">
@@ -192,7 +191,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-img">
                             <img src="{{asset('/')}}website-assets/img/project-4.jpg" class="img-fluid w-100 rounded" alt="">
@@ -205,7 +204,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay=".5s">
                     <div class="project-item">
                         <div class="project-img">
                             <img src="{{asset('/')}}website-assets/img/project-5.jpg" class="img-fluid w-100 rounded" alt="">
@@ -218,7 +217,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay=".7s">
                     <div class="project-item">
                         <div class="project-img">
                             <img src="{{asset('/')}}website-assets/img/project-6.jpg" class="img-fluid w-100 rounded" alt="">
@@ -241,13 +240,13 @@
         <div class="container">
             @foreach($sections as $section)
                 @if($section->section_name=='comment')
-                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <div class="text-center mx-auto pb-5 wow fadeInDown" data-wow-delay=".3s" style="max-width: 600px;">
                         <h3 class="text-white">{{$section->section_title}}</h3>
                         <h1>{{$section->section_tag}}</h1>
                     </div>
                 @endif
             @endforeach
-            <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay=".5s">
                 @foreach($comments as $comment)
                     <div class="testimonial-item border p-4">
                         <div class="d-flex align-items-center">
@@ -279,11 +278,11 @@
     <!-- Team Start -->
     <div class="container-fluid py-5 mb-5 team">
         <div class="container">
-            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <div class="text-center mx-auto pb-5 wow fadeInLeft" data-wow-delay=".3s" style="max-width: 600px;">
                 <h3 class="text-white">Our Team</h3>
                 <h1>Meet our expert Team</h1>
             </div>
-            <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
+            <div class="owl-carousel team-carousel wow fadeInRight" data-wow-delay=".5s">
                 @foreach($members as $member)
                     <div class="rounded team-item">
                         <div class="team-content">
@@ -311,7 +310,7 @@
         <div class="container">
             @foreach($sections as $section)
                 @if($section->section_name=='blog')
-                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <div class="text-center mx-auto pb-5 wow fadeInLeft" data-wow-delay=".3s" style="max-width: 600px;">
                         <h3 class="text-white">{{$section->section_title}}</h3>
                         <h1>{{$section->section_tag}}</h1>
                     </div>
@@ -321,7 +320,7 @@
             <div class="row g-5 justify-content-center">
                 @php($i=.0)
                 @foreach($blogs as $blog)
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="{{$i=$i+.3}}s">
+                    <div class="col-md-6 col-lg-4 wow fadeIn zoomIn" data-wow-delay="{{$i=$i+.3}}s">
                         <div class="blog-item position-relative bg-light rounded">
                             <img src="{{asset($blog->image)}}" class=" w-100 rounded-top" alt="" height="300px">
                             <span class="position-absolute px-3 py-2 bg-multipixeldeep text-white rounded" style="top: -25px; right: 20px;font-family:'Segoe UI Light'">{{$blog->blog_type}}</span>
@@ -344,13 +343,13 @@
     <!-- Contact Start -->
     <div class="container-fluid py-5 mb-5">
         <div class="container">
-            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay=".3s" style="max-width: 600px;">
                 <h3 class="text-white">Get In Touch</h3>
                 <h1 class="mb-3">Contact for any query</h1>
             </div>
             <div class="contact-detail position-relative p-3">
                 <div class="row g-5 justify-content-center">
-                    <div class="col-xl-4 col-lg-6 wow fadeIn " data-wow-delay=".3s">
+                    <div class="col-xl-4 col-lg-6 wow fadeInLeft " data-wow-delay=".3s">
                         <div class="d-flex  p-2 rounded">
                             <div class="flex-shrink-0 btn-square bg-multipixel rounded-circle" style="width: 50px; height: 50px;">
                                 <i class="fas fa-map-marker-alt text-white"></i>
@@ -362,7 +361,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                    <div class="col-xl-4 col-lg-6 wow fadeInDown" data-wow-delay=".5s">
                         <div class="d-flex  p-2 rounded">
                             <div class="flex-shrink-0 btn-square bg-multipixel rounded-circle " style="width: 50px; height: 50px;">
                                 <i class="fa fa-phone text-white"></i>
@@ -374,7 +373,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-2 col-lg-6 wow fadeIn " data-wow-delay=".7s">
+                    <div class="col-xl-2 col-lg-6 wow fadeInRight " data-wow-delay=".7s">
                         <div class="d-flex  p-2 rounded">
                             <div class="flex-shrink-0 btn-square bg-multipixel rounded-circle" style="width: 50px; height: 50px;">
                                 <i class="fa fa-envelope text-white"></i>
@@ -387,12 +386,12 @@
                     </div>
                 </div>
                 <div class="row g-5 mt-5">
-                    <div class="col-lg-6  wow fadeIn" data-wow-delay=".3s">
+                    <div class="col-lg-6  wow zoomIn" data-wow-delay=".3s">
                         <div class="h-100 rounded contact-map">
                             <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4710403339755!2d-73.82241512404069!3d40.685622471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1686493221834!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-12  wow fadeIn" data-wow-delay=".5s">
+                    <div class="col-lg-6 col-sm-12  wow fadeInLeft" data-wow-delay=".5s">
                         <div class=" rounded contact-form" style="font-family: Roboto">
                             <form action="{{route('save.message')}}" method="post">
                                 @csrf

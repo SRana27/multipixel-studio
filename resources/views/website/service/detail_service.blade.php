@@ -10,17 +10,14 @@
         </div>
     </div>
 
-    <div class="container-fluid text-multipixeldeep py-5">
-        <div class="container">
-            <img src="{{asset($detail_service->image)}}" class="card-img-top center"  alt="..." style="height: 450px;">
 
+    <div class="container text-multipixeldeep py-5 ">
+            <img src="{{asset($detail_service->image)}}" class="card-img-top center animated zoomIn"  alt="..." style="height: 450px;">
             <div class="card-body py-4">
-                <p class="detail-description pt-3">{{$detail_service->description}}</p>
+                <p class="detail-description pt-3 animated fadeInLeft">{{$detail_service->description}}</p>
             </div>
-
-
-          </div>
     </div>
+
 
 @endsection
 

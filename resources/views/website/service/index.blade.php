@@ -59,7 +59,7 @@
         <div class="container">
             @foreach($sections as $section)
                 @if($section->section_name=='service')
-                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <div class="text-center mx-auto pb-5 wow fadeInLeft" data-wow-delay=".3s" style="max-width: 600px;">
                         <h3 class="text-white">{{$section->section_title}}</h3>
                         <h1>{{$section->section_tag}}</h1>
                     </div>
@@ -68,7 +68,7 @@
             <div class="row g-5 services-inner">
                 @php($i=.0)
                 @foreach($services as $service)
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="{{$i=$i+.3}}s">
+                    <div class="col-md-6 col-lg-4 wow zoomIn" data-wow-delay="{{$i=$i+.3}}s">
                         <div class="services-item bg-service">
                             <div class="p-4 text-center services-content">
                                 <div class="services-content-icon">

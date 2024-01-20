@@ -56,32 +56,32 @@
         <div class="container">
             @foreach($sections as $section)
                 @if($section->section_name=='comment')
-                    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <div class="text-center mx-auto pb-5 wow fadeInDown" data-wow-delay=".3s" style="max-width: 600px;">
                         <h3 class="text-white">{{$section->section_title}}</h3>
                         <h1>{{$section->section_tag}}</h1>
                     </div>
                 @endif
             @endforeach
-            <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay=".5s">
                 @foreach($comments as $comment)
-                <div class="testimonial-item border p-4">
-                    <div class="d-flex align-items-center">
-                        <div class="">
-                            <img src="{{asset($comment->image)}}" alt="client-image" width="100px" height="100px">
-                        </div>
-                        <div class="ms-4">
-                            <h4 class="">{{$comment->name}}</h4>
-                            <div class="d-flex pe-5 ">
-                                @for($i=1;$i<=$comment->ratting;$i++)
-                                <i class="fas fa-star me-1 "></i>
-                               @endfor
+                    <div class="testimonial-item border p-4">
+                        <div class="d-flex align-items-center">
+                            <div class="">
+                                <img src="{{asset($comment->image)}}" alt="client-image" width="100px" height="100px">
+                            </div>
+                            <div class="ms-4">
+                                <h4 class="">{{$comment->name}}</h4>
+                                <div class="d-flex pe-5 ">
+                                    @for($i=1;$i<=$comment->ratting;$i++)
+                                        <i class="fas fa-star me-1 "></i>
+                                    @endfor
+                                </div>
                             </div>
                         </div>
+                        <div class="border-top mt-4 pt-3">
+                            <p class="mb-0 p-2 client-comment">{{$comment->description}}</p>
+                        </div>
                     </div>
-                    <div class="border-top mt-4 pt-3">
-                        <p class="mb-0 p-2"  style=" display: -webkit-box;-webkit-box-orient: vertical; overflow-y: scroll; height: 140px; text-align: justify;font-family:Roboto;font-size: 18px">{{$comment->description}}</p>
-                    </div>
-                </div>
                 @endforeach
             </div>
         </div>
