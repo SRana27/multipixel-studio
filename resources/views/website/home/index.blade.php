@@ -7,33 +7,31 @@
 @section('body')
 
     <!-- Carousel Start -->
-    <div class="container-fluid px-0">
+    <div class="container-fluid px-0 ">
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="First slide"></li>
                 <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
                 <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
             </ol>
             <div class="carousel-inner " role="listbox">
                 @foreach($carousels as $key=>$carousel)
-                <div class="carousel-item {{$key== 0 ? 'active':''}}">
-                    <img src="{{asset($carousel->image)}}" class="img-fluid " alt="First slide">
-                    <div class="carousel-caption">
-
-                        <div class="container carousel-content">
-                            @if($message=Session::get('message'))
-
-                                <div class="alert alert-success alert-dismissible fade show text-center">
-                                    {{$message}}
-                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-lebel="close"></button>
-                                </div>
-                            @endif
-                            <h3 class="text-white display-1 mb-3 animated fadeInRight">{{$carousel->title}}</h3>
-                            <p class="mb-4 text-white fs-5 animated fadeInLeft">{{$carousel->description}}</p>
-                            <a href="{{route('contact')}}" class="ms-2 "><button type="button" class="py-sm-2 px-sm-4 btn bg-multipixeldeep rounded-pill carousel-content-btn2 animated zoomIn">Contact Us</button></a>
+                    <div class="carousel-item  {{$key== 0 ? 'active':''}}">
+                        <img src="{{asset($carousel->image)}}" class="img-fluid " alt="First slide" style="height: 650px ;width: 100%">
+                        <div class="carousel-caption">
+                            <div class="container carousel-content">
+                                <h3 class="text-white display-1 mb-3 animated fadeInRight">{{$carousel->title}}</h3>
+                                <p class="mb-4 text-white fs-5 animated fadeInLeft">{{$carousel->description}}</p>
+                                <a href="{{route('contact')}}" class="ms-2 ">
+                                    <button type="button"
+                                            class="py-sm-2 px-sm-4 btn bg-multipixeldeep rounded-pill carousel-content-btn2 animated zoomIn">
+                                        Contact Us
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
                 @endforeach
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
@@ -46,30 +44,34 @@
             </button>
         </div>
     </div>
+
+
+
+
     <!-- Carousel End -->
     <!-- Fact Start -->
     <div class="container-fluid text-multipixeldeep py-4">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                <div class="col-lg-3 wow fadeInDown" data-wow-delay=".1s">
                     <div class="d-flex counter">
                         <h1 class="me-3 text-multipixel counter-value">99</h1>
                         <h5 class="text-white mt-1">Success in getting happy customer</h5>
                     </div>
                 </div>
-                <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                <div class="col-lg-3 wow fadeInDown" data-wow-delay=".3s">
                     <div class="d-flex counter">
                         <h1 class="me-3 text-multipixel counter-value">25</h1>
                         <h5 class="text-white mt-1">Thousands of successful business</h5>
                     </div>
                 </div>
-                <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                <div class="col-lg-3 wow fadeInUp" data-wow-delay=".5s">
                     <div class="d-flex counter">
                         <h1 class="me-3 text-multipixel counter-value">120</h1>
                         <h5 class="text-white mt-1">Total clients who love Munltipixel-studio</h5>
                     </div>
                 </div>
-                <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                <div class="col-lg-3 wow fadeInUp" data-wow-delay=".7s">
                     <div class="d-flex counter">
                         <h1 class="me-3 text-multipixel counter-value">5</h1>
                         <h5 class="text-white mt-1">Stars reviews given by satisfied clients</h5>
@@ -246,7 +248,7 @@
                     </div>
                 @endif
             @endforeach
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay=".5s">
+            <div class="owl-carousel testimonial-carousel wow fadeInDown" data-wow-delay=".5s">
                 @foreach($comments as $comment)
                     <div class="testimonial-item border p-4">
                         <div class="d-flex align-items-center">

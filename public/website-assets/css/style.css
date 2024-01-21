@@ -225,7 +225,7 @@ color: #9205ba;
     position: absolute;
     top: 50%;
     left: 0;
-    background: #17112e;
+    /*background: #17112e;*/
     border-radius: 0 50px 50px 0;
     opacity: 1;
 }
@@ -241,7 +241,7 @@ color: #9205ba;
     position: absolute;
     top: 50%;
     right: 0;
-    background:  #17112e;
+    /*background:  #17112e;*/
     border-radius: 50px 0 0 50px;
     opacity: 1;
 }
@@ -350,6 +350,7 @@ color: #9205ba;
     .carousel-item img {
         min-height: 400px;
         object-fit: cover;
+
     }
 
     .carousel-item h3 {
@@ -359,9 +360,7 @@ color: #9205ba;
     .carousel-item p {
         font-size: 15px !important;
     }
-    .carousel-caption .carousel-content a button.carousel-content-btn1{
-        font-size: 12px;
-    }
+
     .carousel-caption .carousel-content a button.carousel-content-btn2{
         font-size: 12px;
     }
@@ -383,9 +382,7 @@ color: #9205ba;
     .carousel-item p {
         font-size: 12px !important;
     }
-    .carousel-caption .carousel-content a button.carousel-content-btn1{
-        font-size: 10px;
-    }
+
     .carousel-caption .carousel-content a button.carousel-content-btn2{
         font-size: 10px;
     }
