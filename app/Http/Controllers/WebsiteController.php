@@ -16,7 +16,7 @@ class WebsiteController extends Controller
 public function index()
 {
     return view('website.home.index',
-    [   'carousels' => Carousel::OrderBy('id','desc')->take('3')->where('status',1)->get(),
+    [   'carousels' => Carousel::OrderBy('id','desc')->take('2')->where('status',1)->get(),
         'abouts' =>About::OrderBy('id','desc')->take('1')->get(),
         'services'=> Service::orderBy('id','desc')->take('6')->where('status',1)->get(),
         'sections'=>Section::all(),

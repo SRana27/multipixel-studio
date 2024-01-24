@@ -7,7 +7,7 @@
     <!-- Page Header Start -->
     <div class="container-fluid contact-page-header py-5" style="min-height: 350px">
         <div class="container text-center py-5">
-{{--            <h1 class="display-2 text-multipixeldeep mb-4 animated slideInDown">Contact</h1>--}}
+            <h1 class="display-2 text-multipixeldeep mb-4 animated slideInDown">Contact</h1>
         </div>
     </div>
 
@@ -53,7 +53,7 @@
                             </div>
                             <div class="ms-4 ">
                                 <span class="text-white" style="font-size: 20px">Email Us</span><br>
-                                <span ><a  href="" target="_blank">info@example.com</a></span>
+                                <span ><a  href="https://www.google.com/gmail" target="_blank">info@example.com</a></span>
                             </div>
                         </div>
                     </div>
