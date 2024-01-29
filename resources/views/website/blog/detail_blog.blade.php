@@ -20,12 +20,11 @@ Blog details
     <div class="container-fluid text-multipixeldeep py-5">
         <div class="container">
             <div class="detail-blog">
-
                 <img src="{{asset($blog->image)}}" class="card-img-top pb-2 animated fadeInLeft" alt="..." style="max-width:500px;max-height:320px;float:left;border-radius: 10px;margin-right: 15px;">
                 <div class="text-box pb-5">
                     <h1 class="text-white text-end "> Blog Type: {{$blog->blog_type}}</h1>
                     <h4 class="text-multipixel text-end ">Date: {{$blog->date}}</h4>
-                    <p class="detail-description pt-3 animated  fadeInRight">{{$blog->description}}
+                    <p class="detail-description pt-3 pb-3 animated  fadeInRight">{{$blog->description}}
                 </div>
             </div>
         </div>
