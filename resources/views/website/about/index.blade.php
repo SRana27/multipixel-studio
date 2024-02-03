@@ -57,15 +57,17 @@
             <div class="container pt-5">
                 @foreach($abouts as $about)
                     <div class="row g-5">
-                        <div class="col-lg-5 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay=".3s">
-                            <div class="h-100 position-relative">
-                                <img src="{{asset($about->image_top)}}" class="img-fluid w-75 rounded" alt="image_top" style="margin-bottom: 25%;">
-                                <div class="position-absolute w-75" style="top: 25%; left: 25%;">
-                                    <img src="{{asset($about->image_down)}}" class="img-fluid w-100 rounded" alt="image_down">
-                                </div>
-                            </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay=".3s">
+{{--                            <div class="h-100 position-relative">--}}
+{{--                                <img src="{{asset($about->image_top)}}" class="img-fluid w-75 rounded" alt="image_top" style="margin-bottom: 25%;">--}}
+{{--                                <div class="position-absolute w-75" style="top: 25%; left: 25%;">--}}
+{{--                                    <img src="{{asset($about->image_down)}}" class="img-fluid w-100 rounded" alt="image_down">--}}
+{{--                                </div>--}}
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0EeK4zdOJgk?si=YmSLHC046XZoimr_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{{--                            </div>--}}
                         </div>
-                        <div class="col-lg-7 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay=".5s">
+                        <div class="col-lg-6 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay=".5s">
                             <h3 class="text-white">{{$about->section_name}}</h3>
                             <h1 class="mb-4 ">{{$about->title}}</h1>
                             <p  style="font-family:Roboto;text-align: justify " >{{$about->description}}</p>
@@ -91,7 +93,7 @@
                             <div class="team-content">
                                 <div class="team-img-icon">
                                     <div class="team-img rounded-circle">
-                                        <img src="{{asset($member->image)}}" class="img-fluid w-100 rounded-circle" alt=""  style="height: 230px">
+                                        <img src="{{asset($member->image)}}" class="img-fluid w-100 rounded-circle" alt=""  style="height: 250px">
                                     </div>
                                     <div class="team-name text-center pt-2">
                                         <h4 class="pt-2">{{$member->member_name}}</h4>

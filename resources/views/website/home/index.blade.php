@@ -290,10 +290,10 @@
                         <div class="team-content">
                             <div class="team-img-icon">
                                 <div class="team-img rounded-circle">
-                                    <img src="{{asset($member->image)}}" class="img-fluid w-100 rounded-circle" alt="" style="height: 230px;width: 100px">
+                                    <img src="{{asset($member->image)}}" class="img-fluid w-100 rounded-circle" alt="" style="height: 250px;width: 100px">
                                 </div>
-                                <div class="team-name text-center pt-2">
-                                    <h4 class="pt-2">{{$member->member_name}}</h4>
+                                <div class="team-name text-center pt-3">
+                                    <h4 class="pt-1">{{$member->member_name}}</h4>
                                     <p class="m-0 text-multipixeldeep">{{$member->designation}}</p>
                                 </div>
                                 <div class="text-center pb-4">
